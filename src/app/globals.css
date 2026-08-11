@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  /* Brand — pulled from the Crabtree seal (blue + gold on near-black) */
+  --color-ink: #0a0d10; /* primary bg */
+  --color-ink-2: #12161b; /* card / raised surface */
+  --color-ink-3: #1b2128; /* hairline borders on dark */
+  --color-cream: #f4efe4; /* primary text on dark */
+  --color-gold: #f3b515; /* primary accent */
+  --color-gold-dim: #b8860f;
+  --color-blue: #1c6ba0; /* secondary accent */
+  --color-blue-deep: #0e4368;
+}
+
+@theme inline {
+  --color-ink: var(--color-ink);
+  --color-ink-2: var(--color-ink-2);
+  --color-ink-3: var(--color-ink-3);
+  --color-cream: var(--color-cream);
+  --color-gold: var(--color-gold);
+  --color-gold-dim: var(--color-gold-dim);
+  --color-blue: var(--color-blue);
+  --color-blue-deep: var(--color-blue-deep);
+
+  --font-display: var(--font-anton);
+  --font-sans: var(--font-inter);
+
+  --animate-marquee: marquee 28s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+body {
+  background: var(--color-ink);
+  color: var(--color-cream);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: var(--color-gold);
+  color: var(--color-ink);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
