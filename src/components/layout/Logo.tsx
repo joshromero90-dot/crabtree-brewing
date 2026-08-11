@@ -15,14 +15,14 @@ export function Logo({ className = "" }: { className?: string }) {
         <Image
           src="/logo.png"
           alt={`${"Crabtree Brewing Company"} logo`}
-          width={44}
-          height={44}
-          className="h-11 w-11 shrink-0"
+          width={176}
+          height={176}
+          className="h-44 w-44 shrink-0"
           priority
         />
       ) : (
         <span
-          className="relative flex h-11 w-11 shrink-0 items-center justify-center rounded-full border-2 border-blue bg-gold text-[10px] font-black tracking-tight text-blue"
+          className="relative flex h-44 w-44 shrink-0 items-center justify-center rounded-full border-4 border-blue bg-gold text-3xl font-black tracking-tight text-blue"
           aria-hidden
         >
           CB
