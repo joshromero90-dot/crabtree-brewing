@@ -28,8 +28,7 @@ export function Hero() {
 
           <h1 className="mt-6 font-display text-[15vw] leading-[0.85] text-cream uppercase sm:text-7xl lg:text-7xl xl:text-8xl">
             Greeley&rsquo;s
-            <br />
-            <span className="text-blue">OG Brewery.</span>
+            <span className="mt-2 block text-blue">OG Brewery.</span>
           </h1>
 
           <p className="mt-8 max-w-xl text-balance font-sans text-base text-cream/60 sm:text-lg">
