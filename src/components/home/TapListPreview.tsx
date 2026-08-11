@@ -28,7 +28,7 @@ export function TapListPreview() {
           {featured.map((beer) => (
             <div
               key={beer.slug}
-              className="group flex flex-col justify-between bg-ink p-6 transition-colors hover:bg-ink-2"
+              className="group flex flex-col justify-between bg-ink p-6 transition-colors hover:bg-gold"
             >
               <div>
                 <span className="font-sans text-[10px] font-bold tracking-[0.2em] text-blue uppercase">
@@ -39,7 +39,7 @@ export function TapListPreview() {
                 </h3>
                 <p className="mt-3 font-sans text-sm text-cream/50">{beer.description}</p>
               </div>
-              <span className="mt-6 font-sans text-xs font-bold tracking-[0.15em] text-gold-dim">
+              <span className="mt-6 font-sans text-xs font-bold tracking-[0.15em] text-gold-dim group-hover:text-cream">
                 {beer.abv} ABV
               </span>
             </div>
