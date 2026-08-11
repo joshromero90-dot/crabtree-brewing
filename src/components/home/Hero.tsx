@@ -6,12 +6,12 @@ export function Hero() {
     <section className="relative overflow-hidden border-b border-ink-3">
       {/* Abstract brand glow — swap for real taproom photography whenever it's ready */}
       <div
-        className="pointer-events-none absolute -top-1/3 -right-1/4 h-[600px] w-[600px] rounded-full opacity-20 blur-3xl"
+        className="pointer-events-none absolute -top-1/3 -right-1/4 h-[600px] w-[600px] rounded-full opacity-40 blur-3xl"
         style={{ background: "radial-gradient(circle, var(--color-gold), transparent 70%)" }}
         aria-hidden
       />
       <div
-        className="pointer-events-none absolute -bottom-1/3 -left-1/4 h-[500px] w-[500px] rounded-full opacity-25 blur-3xl"
+        className="pointer-events-none absolute -bottom-1/3 -left-1/4 h-[500px] w-[500px] rounded-full opacity-30 blur-3xl"
         style={{ background: "radial-gradient(circle, var(--color-blue), transparent 70%)" }}
         aria-hidden
       />
@@ -19,7 +19,7 @@ export function Hero() {
       <div className="relative mx-auto max-w-7xl px-6 pt-16 pb-20 sm:pt-24 sm:pb-28">
         <div className="flex items-center gap-3">
           <span className="h-[2px] w-8 bg-gold" />
-          <span className="font-sans text-[11px] font-bold tracking-[0.3em] text-gold uppercase">
+          <span className="font-sans text-[11px] font-bold tracking-[0.3em] text-gold-dim uppercase">
             Est. {site.established} · Greeley, Colorado
           </span>
         </div>
@@ -27,7 +27,7 @@ export function Hero() {
         <h1 className="mt-6 font-display text-[15vw] leading-[0.85] text-cream uppercase sm:text-[9vw] lg:text-[7.5vw]">
           Beer, Brewed
           <br />
-          <span className="text-gold">for Greeley.</span>
+          <span className="text-gold-dim">for Greeley.</span>
         </h1>
 
         <p className="mt-8 max-w-xl text-balance font-sans text-base text-cream/60 sm:text-lg">

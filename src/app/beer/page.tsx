@@ -26,7 +26,7 @@ export default function BeerPage() {
         <div className="flex flex-col gap-16">
           {categories.map(({ category, items }) => (
             <div key={category}>
-              <h2 className="font-display text-2xl tracking-wide text-gold uppercase">
+              <h2 className="font-display text-2xl tracking-wide text-gold-dim uppercase">
                 {category}
               </h2>
               <div className="mt-6 grid gap-px overflow-hidden border border-ink-3 sm:grid-cols-2">
@@ -37,7 +37,7 @@ export default function BeerPage() {
                         <h3 className="font-display text-2xl tracking-wide text-cream uppercase">
                           {beer.name}
                         </h3>
-                        <span className="shrink-0 font-sans text-xs font-bold text-gold">
+                        <span className="shrink-0 font-sans text-xs font-bold text-gold-dim">
                           {beer.abv}
                         </span>
                       </div>

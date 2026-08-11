@@ -55,12 +55,12 @@ export function ContactForm() {
       </div>
       <button
         type="submit"
-        className="w-fit border-2 border-gold bg-gold px-6 py-3 font-sans text-xs font-bold tracking-[0.15em] text-ink uppercase transition-colors hover:bg-transparent hover:text-gold"
+        className="w-fit border-2 border-gold bg-gold px-6 py-3 font-sans text-xs font-bold tracking-[0.15em] text-cream uppercase transition-colors hover:bg-transparent hover:text-gold-dim"
       >
         Send Message
       </button>
       {sent && (
-        <p className="font-sans text-sm text-gold">
+        <p className="font-sans text-sm text-gold-dim">
           Opening your email client to finish sending — thanks!
         </p>
       )}

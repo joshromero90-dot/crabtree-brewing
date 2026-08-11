@@ -17,26 +17,26 @@ export default function ContactPage() {
 
         <div className="flex flex-col gap-8">
           <div>
-            <h2 className="font-sans text-[11px] font-bold tracking-[0.25em] text-gold uppercase">
+            <h2 className="font-sans text-[11px] font-bold tracking-[0.25em] text-gold-dim uppercase">
               Phone
             </h2>
-            <a href={site.phoneHref} className="mt-2 block font-display text-2xl tracking-wide text-cream hover:text-gold">
+            <a href={site.phoneHref} className="mt-2 block font-display text-2xl tracking-wide text-cream hover:text-gold-dim">
               {site.phone}
             </a>
           </div>
           <div>
-            <h2 className="font-sans text-[11px] font-bold tracking-[0.25em] text-gold uppercase">
+            <h2 className="font-sans text-[11px] font-bold tracking-[0.25em] text-gold-dim uppercase">
               Email
             </h2>
             <a
               href={`mailto:${site.email}`}
-              className="mt-2 block font-display text-2xl tracking-wide text-cream hover:text-gold"
+              className="mt-2 block font-display text-2xl tracking-wide text-cream hover:text-gold-dim"
             >
               {site.email}
             </a>
           </div>
           <div>
-            <h2 className="font-sans text-[11px] font-bold tracking-[0.25em] text-gold uppercase">
+            <h2 className="font-sans text-[11px] font-bold tracking-[0.25em] text-gold-dim uppercase">
               Taproom
             </h2>
             <address className="mt-2 font-sans text-base text-cream/70 not-italic">

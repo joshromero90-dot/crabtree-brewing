@@ -17,7 +17,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="font-sans text-[11px] font-bold tracking-[0.25em] text-gold uppercase">
+            <h3 className="font-sans text-[11px] font-bold tracking-[0.25em] text-gold-dim uppercase">
               Taproom
             </h3>
             <address className="mt-3 flex flex-col gap-1 font-sans text-sm text-cream/60 not-italic">
@@ -33,7 +33,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="font-sans text-[11px] font-bold tracking-[0.25em] text-gold uppercase">
+            <h3 className="font-sans text-[11px] font-bold tracking-[0.25em] text-gold-dim uppercase">
               Hours
             </h3>
             <ul className="mt-3 flex flex-col gap-1 font-sans text-sm text-cream/60">
@@ -51,7 +51,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="font-sans text-[11px] font-bold tracking-[0.25em] text-gold uppercase">
+            <h3 className="font-sans text-[11px] font-bold tracking-[0.25em] text-gold-dim uppercase">
               Explore
             </h3>
             <ul className="mt-3 flex flex-col gap-2 font-sans text-sm text-cream/60">
@@ -73,14 +73,14 @@ export function Footer() {
               <a
                 href={site.social.instagram}
                 target="_blank"
-                className="font-sans text-[11px] font-semibold tracking-[0.15em] text-cream/50 uppercase hover:text-gold"
+                className="font-sans text-[11px] font-semibold tracking-[0.15em] text-cream/50 uppercase hover:text-gold-dim"
               >
                 Instagram
               </a>
               <a
                 href={site.social.untappd}
                 target="_blank"
-                className="font-sans text-[11px] font-semibold tracking-[0.15em] text-cream/50 uppercase hover:text-gold"
+                className="font-sans text-[11px] font-semibold tracking-[0.15em] text-cream/50 uppercase hover:text-gold-dim"
               >
                 Untappd
               </a>

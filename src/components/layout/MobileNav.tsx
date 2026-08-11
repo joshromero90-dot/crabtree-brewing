@@ -40,7 +40,7 @@ export function MobileNav() {
                 key={item.href}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="font-display text-2xl tracking-wide text-cream uppercase hover:text-gold"
+                className="font-display text-2xl tracking-wide text-cream uppercase hover:text-gold-dim"
               >
                 {item.label}
               </Link>
@@ -48,7 +48,7 @@ export function MobileNav() {
             <Link
               href="/taproom"
               onClick={() => setOpen(false)}
-              className="mt-2 w-fit border-2 border-gold bg-gold px-4 py-2 font-sans text-xs font-bold tracking-[0.15em] text-ink uppercase"
+              className="mt-2 w-fit border-2 border-gold bg-gold px-4 py-2 font-sans text-xs font-bold tracking-[0.15em] text-cream uppercase"
             >
               Visit Taproom
             </Link>

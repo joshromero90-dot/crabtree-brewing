@@ -1,15 +1,26 @@
 @import "tailwindcss";
 
 :root {
-  /* Brand — pulled from the Crabtree seal (blue + gold on near-black) */
-  --color-ink: #0a0d10; /* primary bg */
-  --color-ink-2: #12161b; /* card / raised surface */
-  --color-ink-3: #1b2128; /* hairline borders on dark */
-  --color-cream: #f4efe4; /* primary text on dark */
-  --color-gold: #f3b515; /* primary accent */
-  --color-gold-dim: #b8860f;
+  /* Brand — pulled from the Crabtree seal (blue + gold on warm paper).
+     Token names kept from the dark v1 theme but roles are re-paired for
+     light mode:
+     - ink     -> light paper surface (was: dark bg). Also reused as a
+                  guaranteed-LIGHT foreground on dark accent bands (blue-deep).
+     - ink-2/3 -> light card surface / hairline border (was: dark equivalents).
+     - cream   -> dark primary text + icon marks (was: light text). Also
+                  reused as a guaranteed-DARK foreground on gold fills
+                  (buttons, pills) since gold itself stays light either way.
+     - gold    -> vivid fill/border accent (buttons, badges, section bands).
+     - gold-dim-> darker amber for GOLD TEXT specifically — vivid gold text
+                  on light paper doesn't have enough contrast to read well. */
+  --color-ink: #faf5e8; /* paper bg */
+  --color-ink-2: #f1e6c9; /* card / raised surface */
+  --color-ink-3: #e3d3a8; /* hairline borders on paper */
+  --color-cream: #1c1710; /* primary text (dark) */
+  --color-gold: #f3b515; /* primary accent (fills/borders) */
+  --color-gold-dim: #96650a; /* accent when used as TEXT on paper */
   --color-blue: #1c6ba0; /* secondary accent */
-  --color-blue-deep: #0e4368;
+  --color-blue-deep: #0e4368; /* dark band background */
 }
 
 @theme inline {
@@ -45,7 +56,7 @@ body {
 
 ::selection {
   background: var(--color-gold);
-  color: var(--color-ink);
+  color: var(--color-cream);
 }
 
 .text-balance {

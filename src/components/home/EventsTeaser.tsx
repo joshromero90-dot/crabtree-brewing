@@ -31,7 +31,7 @@ export function EventsTeaser() {
                 <p className="mt-1 font-sans text-sm text-cream/45">{event.description}</p>
               </div>
               <div className="shrink-0 text-right">
-                <div className="font-sans text-xs font-bold tracking-[0.1em] text-gold uppercase">
+                <div className="font-sans text-xs font-bold tracking-[0.1em] text-gold-dim uppercase">
                   {event.date}
                 </div>
                 <div className="font-sans text-xs text-cream/40">{event.time}</div>

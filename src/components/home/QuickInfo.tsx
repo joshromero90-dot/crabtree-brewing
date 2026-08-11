@@ -12,14 +12,14 @@ export function QuickInfo() {
   ];
 
   return (
-    <section className="border-b border-ink-3">
-      <div className="mx-auto grid max-w-7xl grid-cols-2 gap-px overflow-hidden border-x border-ink-3 sm:grid-cols-4">
+    <section className="border-b border-ink-3 bg-gold">
+      <div className="mx-auto grid max-w-7xl grid-cols-2 gap-px overflow-hidden sm:grid-cols-4">
         {stats.map((stat) => (
-          <div key={stat.label} className="bg-ink-2 px-6 py-8 text-center">
-            <div className="font-display text-2xl tracking-wide text-gold uppercase sm:text-3xl">
+          <div key={stat.label} className="bg-gold px-6 py-8 text-center">
+            <div className="font-display text-2xl tracking-wide text-cream uppercase sm:text-3xl">
               {stat.value}
             </div>
-            <div className="mt-2 font-sans text-[10px] font-semibold tracking-[0.2em] text-cream/40 uppercase">
+            <div className="mt-2 font-sans text-[10px] font-semibold tracking-[0.2em] text-cream/60 uppercase">
               {stat.label}
             </div>
           </div>

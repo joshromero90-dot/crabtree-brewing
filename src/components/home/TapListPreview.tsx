@@ -18,7 +18,7 @@ export function TapListPreview() {
           </div>
           <Link
             href="/beer"
-            className="font-sans text-xs font-bold tracking-[0.2em] text-gold uppercase hover:underline"
+            className="font-sans text-xs font-bold tracking-[0.2em] text-gold-dim uppercase hover:underline"
           >
             Full Beer Menu →
           </Link>
@@ -39,7 +39,7 @@ export function TapListPreview() {
                 </h3>
                 <p className="mt-3 font-sans text-sm text-cream/50">{beer.description}</p>
               </div>
-              <span className="mt-6 font-sans text-xs font-bold tracking-[0.15em] text-gold">
+              <span className="mt-6 font-sans text-xs font-bold tracking-[0.15em] text-gold-dim">
                 {beer.abv} ABV
               </span>
             </div>

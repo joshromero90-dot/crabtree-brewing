@@ -24,7 +24,7 @@ export function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="font-sans text-xs font-semibold tracking-[0.18em] text-cream/60 uppercase transition-colors hover:text-gold"
+                className="font-sans text-xs font-semibold tracking-[0.18em] text-cream/60 uppercase transition-colors hover:text-gold-dim"
               >
                 {item.label}
               </Link>
@@ -32,7 +32,7 @@ export function Header() {
           </nav>
           <Link
             href="/taproom"
-            className="hidden shrink-0 border-2 border-gold bg-gold px-4 py-2 font-sans text-xs font-bold tracking-[0.15em] text-ink uppercase transition-colors hover:bg-transparent hover:text-gold lg:block"
+            className="hidden shrink-0 border-2 border-gold bg-gold px-4 py-2 font-sans text-xs font-bold tracking-[0.15em] text-cream uppercase transition-colors hover:bg-transparent hover:text-gold-dim lg:block"
           >
             Visit Taproom
           </Link>

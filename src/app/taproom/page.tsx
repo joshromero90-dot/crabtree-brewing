@@ -23,7 +23,7 @@ export default function TaproomPage() {
 
       <section className="mx-auto grid max-w-7xl gap-12 px-6 py-16 lg:grid-cols-2 lg:gap-20">
         <div>
-          <h2 className="font-display text-2xl tracking-wide text-gold uppercase">Hours</h2>
+          <h2 className="font-display text-2xl tracking-wide text-gold-dim uppercase">Hours</h2>
           <ul className="mt-5 flex flex-col divide-y divide-ink-3 border-t border-b border-ink-3">
             {site.hours.map((h) => (
               <li key={h.day} className="flex justify-between py-3 font-sans text-sm">
@@ -35,7 +35,7 @@ export default function TaproomPage() {
             ))}
           </ul>
 
-          <h2 className="mt-12 font-display text-2xl tracking-wide text-gold uppercase">
+          <h2 className="mt-12 font-display text-2xl tracking-wide text-gold-dim uppercase">
             Find Us
           </h2>
           <address className="mt-5 font-sans text-base text-cream/70 not-italic">
@@ -43,7 +43,7 @@ export default function TaproomPage() {
             <br />
             {site.address.city}, {site.address.state} {site.address.zip}
             <br />
-            <a href={site.phoneHref} className="mt-2 inline-block hover:text-gold">
+            <a href={site.phoneHref} className="mt-2 inline-block hover:text-gold-dim">
               {site.phone}
             </a>
           </address>
@@ -61,7 +61,7 @@ export default function TaproomPage() {
           <iframe
             title="Map to Crabtree Brewing Company"
             src={`https://maps.google.com/maps?q=${mapQuery}&z=15&output=embed`}
-            className="h-full w-full grayscale invert-[0.92] contrast-[1.1]"
+            className="h-full w-full"
             loading="lazy"
           />
         </div>

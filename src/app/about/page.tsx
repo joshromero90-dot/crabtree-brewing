@@ -78,7 +78,7 @@ export default function AboutPage() {
           <ol className="mt-8 flex flex-col divide-y divide-ink-3 border-t border-b border-ink-3">
             {TIMELINE.map((item) => (
               <li key={item.year} className="grid gap-2 py-6 sm:grid-cols-[100px_1fr] sm:gap-8">
-                <span className="font-display text-2xl tracking-wide text-gold uppercase">
+                <span className="font-display text-2xl tracking-wide text-gold-dim uppercase">
                   {item.year}
                 </span>
                 <div>

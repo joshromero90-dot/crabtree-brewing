@@ -35,7 +35,7 @@ export default function EventsPage() {
                 </p>
               </div>
               <div className="shrink-0 sm:text-right">
-                <div className="font-sans text-sm font-bold tracking-[0.05em] text-gold uppercase">
+                <div className="font-sans text-sm font-bold tracking-[0.05em] text-gold-dim uppercase">
                   {event.date}
                 </div>
                 <div className="font-sans text-sm text-cream/40">{event.time}</div>

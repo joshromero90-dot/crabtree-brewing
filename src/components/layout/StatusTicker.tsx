@@ -35,7 +35,7 @@ export function StatusTicker() {
             }`}
             aria-hidden
           />
-          <span className="whitespace-nowrap font-sans text-[11px] font-bold uppercase tracking-[0.12em] text-ink">
+          <span className="whitespace-nowrap font-sans text-[11px] font-bold uppercase tracking-[0.12em] text-cream">
             {status === null
               ? " "
               : status.isOpen
