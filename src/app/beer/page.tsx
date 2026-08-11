@@ -21,7 +21,7 @@ export default function BeerPage() {
       <PageHero
         eyebrow="20+ On Tap"
         title="Beer Menu"
-        subtitle="Pulled from the current tap list — always double check with the taproom for what's actually pouring today."
+        subtitle="Tap into over 20+ beer and not-beer options. Pulled from the current tap list — always double check with the taproom for what's actually pouring today."
       />
 
       <CategoryNav categories={categories.map((c) => c.category)} />

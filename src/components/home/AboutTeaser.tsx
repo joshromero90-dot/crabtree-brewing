@@ -22,8 +22,9 @@ export function AboutTeaser() {
             Production Brewery
           </h2>
           <p className="mt-6 font-sans text-base text-cream/60">
-            {site.description} Come for the beer, stay for the community — this is a taphouse
-            built by Greeley, for Greeley.
+            What started as a homebrewing habit in {site.established} is now Greeley&rsquo;s
+            destination brewery — seasonal beers, special releases, and an endless supply of
+            great people. Come for the brew, stay for the vibes.
           </p>
           <div className="mt-8">
             <Button href="/about" variant="outline">

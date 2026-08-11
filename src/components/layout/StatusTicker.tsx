@@ -5,11 +5,11 @@ import { site } from "@/lib/site-config";
 import { getTodayStatus, formatHour } from "@/lib/hours";
 
 const TICKER_ITEMS = [
-  "20+ BEERS ON TAP",
+  "TAP INTO 20+ BEERS",
   "TRIVIA WEDNESDAYS · 7PM",
   "POKER NIGHT THURSDAYS · 6:30PM",
   `EST. ${site.established} · GREELEY'S ORIGINAL PRODUCTION BREWERY`,
-  "FAMILY & DOG FRIENDLY TAPROOM",
+  "COME FOR THE BREW, STAY FOR THE VIBES",
 ];
 
 export function StatusTicker() {

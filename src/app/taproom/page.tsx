@@ -16,14 +16,20 @@ export default function TaproomPage() {
   return (
     <>
       <PageHero
-        eyebrow="Come Hang Out"
+        eyebrow="Greeley's Destination Brewery"
         title="The Taproom"
         subtitle="Come for the brew, stay for the vibes. Family and dog friendly, always pouring something new."
       />
 
       <section className="mx-auto grid max-w-7xl gap-12 px-6 py-16 lg:grid-cols-2 lg:gap-20">
         <div>
-          <h2 className="font-display text-2xl tracking-wide text-gold-dim uppercase">Hours</h2>
+          <p className="font-sans text-base text-cream/60">
+            Seasonal beers, special releases, and an endless supply of great people — that&rsquo;s
+            what you&rsquo;ll find in the taphouse.
+          </p>
+          <h2 className="mt-8 font-display text-2xl tracking-wide text-gold-dim uppercase">
+            Hours
+          </h2>
           <ul className="mt-5 flex flex-col divide-y divide-ink-3 border-t border-b border-ink-3">
             {site.hours.map((h) => (
               <li key={h.day} className="flex justify-between py-3 font-sans text-sm">

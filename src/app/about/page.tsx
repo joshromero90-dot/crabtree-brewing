@@ -25,32 +25,32 @@ const TIMELINE = [
   {
     year: "2003",
     title: "A trip to the homebrew shop",
-    text: "Jeff and Stephanie Crabtree drive to a homebrew shop in Denver to pick up gear for a new hobby: brewing beer at home.",
+    text: "Jeff and his wife, Stephanie, trek to the nearest homebrew shop in the Denver area for a new hobby: brewing beer at home. Jeff's studying business at UNC, and brewing starts finding its way into every school project.",
   },
   {
     year: "2004",
     title: "“Honey, I want to open a brewery.”",
-    text: "Jeff decides the hobby should become a business. The Crabtrees buy equipment from a closing brewpub to get started.",
+    text: "Jeff's entrepreneurial spirit blooms. A brewpub in town is closing, and the Crabtrees snap up its equipment for a steal — with no space to put it yet, it all goes into the garage.",
   },
   {
     year: "2005",
     title: "Jeff graduates UNC",
-    text: "Jeff finishes his business degree at the University of Northern Colorado, right in Greeley — the city that would become home to the brewery.",
+    text: "Jeff finishes his degree. Two months later, the first brewery site is chosen and the equipment finally moves out of the garage.",
   },
   {
     year: "2006",
     title: "Doors open",
-    text: "After moving the equipment into a permanent facility that February, Crabtree Brewing Company opens for the first time on May 5, 2006 — Greeley's first production brewery.",
+    text: "Crabtree opens its doors for the first time on May 5, 2006 — just two years after those seven magic words — as Greeley's first production brewery.",
   },
   {
     year: "2009",
-    title: "Jeff goes full-time",
-    text: "Jeff leaves his corporate job to run Crabtree full time as the brewery grows.",
+    title: "Jeff quits the cubicle",
+    text: "After years of running the brewery alongside a full-time corporate job, Jeff finally quits the cubicle for good and starts fully living the brewer's dream.",
   },
   {
     year: "Today",
-    title: "Greeley's original taproom",
-    text: `Two decades in, Crabtree is still pouring at ${site.address.line1} — 20+ beers on tap, a taphouse built for the neighborhood.`,
+    title: "Greeley's destination brewery",
+    text: `Two decades in, Crabtree is still pouring at ${site.address.line1} — seasonal beers, special releases, and an endless supply of great people.`,
   },
 ];
 
@@ -65,25 +65,32 @@ export default function AboutPage() {
 
       <section className="mx-auto max-w-3xl px-6 py-16">
         <p className="font-sans text-lg leading-relaxed text-cream/70">
-          Crabtree Brewing Company started the way a lot of good breweries do: as a hobby that
-          went too far. In September 2003, Jeff and Stephanie Crabtree drove to a homebrew shop
-          in Denver — the closest one they could find — to pick up everything they needed to
-          start brewing beer at home. Less than a year later, Jeff turned to Stephanie with the
-          idea that would define the next two decades: &ldquo;Honey, I want to open a
-          brewery.&rdquo;
+          In September 2003, Jeff and his wife, Stephanie, trekked to the nearest homebrew shop
+          in the Denver area to buy what they needed to start a new hobby of brewing beer at
+          home. Jeff was studying business at UNC, and brewing quickly found its way into all of
+          his school projects — business ideas for a brewery and beer-making concepts started
+          popping up in each assignment.
         </p>
         <p className="mt-6 font-sans text-lg leading-relaxed text-cream/70">
-          They bought equipment from a brewpub that was closing down and spent the next two years
-          turning the idea into a real business — while Jeff finished his business degree at the
-          University of Northern Colorado, right there in Greeley. The equipment moved into a
-          permanent facility in February 2006, and on May 5, 2006, Crabtree Brewing Company
-          opened its doors as Greeley&rsquo;s first production brewery. By 2009, the brewery had
-          grown enough that Jeff left his corporate job behind to run Crabtree full time.
+          His entrepreneurial spirit bloomed in June 2004, when Jeff said the seven most magical
+          words a man can ever offer his wife: &ldquo;Honey, I want to open a brewery.&rdquo; A
+          brewpub in town was closing its doors, and even after the auction, some of the
+          equipment was still there for the taking. Jeff and Stephanie jumped on it for a steal —
+          they just didn&rsquo;t have a space for a brewery yet, so it all went into the garage
+          while Jeff finished his degree and hunted for a location.
         </p>
         <p className="mt-6 font-sans text-lg leading-relaxed text-cream/70">
-          Since then, Crabtree has grown into the taphouse Greeley knows today — 20+ beers on
-          tap, a menu that ranges from crushable blondes to seasonal stouts, and a taproom built
-          for regulars. Come for the beer, stay for the community.
+          In December 2005, Jeff graduated from UNC. Two months later, the first brewery site
+          was chosen and the equipment finally moved out of the garage. Crabtree opened its
+          doors for the first time on May 5, 2006 — just two years after Jeff first said those
+          seven words. He kept working his full-time, benefit-paying corporate job right
+          alongside running the brewery, until 2009, when he was finally able to quit the
+          cubicle. He&rsquo;s been fully living the brewer&rsquo;s dream ever since.
+        </p>
+        <p className="mt-6 font-sans text-sm text-cream/40">
+          This story is adapted from Stephanie Crabtree&rsquo;s blog,{" "}
+          <em>The Hobbyless Brewer&rsquo;s Wife</em> — for a much more passionate telling from
+          her side of it, that&rsquo;s the place to go.
         </p>
       </section>
 
@@ -106,9 +113,8 @@ export default function AboutPage() {
             ))}
           </ol>
           <p className="mt-8 font-sans text-xs text-cream/30">
-            Assembled from Crabtree&rsquo;s own &ldquo;Our Story&rdquo; page plus BizWest and UNC
-            alumni magazine coverage. If you&rsquo;ve got the fuller version — or corrections —
-            swap it in at{" "}
+            Pulled straight from Crabtree&rsquo;s own &ldquo;Our Story&rdquo; page. Got an
+            update or a correction? Swap it in at{" "}
             <code className="text-cream/50">src/app/about/page.tsx</code>.
           </p>
         </div>

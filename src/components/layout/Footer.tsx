@@ -12,7 +12,8 @@ export function Footer() {
               Crabtree
             </span>
             <p className="mt-3 max-w-xs font-sans text-sm text-cream/50">
-              {site.description}
+              Greeley&rsquo;s original production brewery — proud to pour quality beer and
+              genuine community since {site.established}.
             </p>
           </div>
 

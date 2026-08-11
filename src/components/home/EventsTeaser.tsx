@@ -12,7 +12,7 @@ export function EventsTeaser() {
             Events
           </h2>
           <p className="mt-6 max-w-sm font-sans text-sm text-cream/50">
-            Trivia, live music, and tap takeovers — the taproom calendar, always up to date.
+            Trivia, poker, and seasonal releases — the taproom calendar, always up to date.
           </p>
           <div className="mt-8">
             <Button href="/events" variant="outline">

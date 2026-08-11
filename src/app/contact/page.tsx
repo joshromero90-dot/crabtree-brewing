@@ -10,7 +10,11 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      <PageHero eyebrow="Get In Touch" title="Contact" />
+      <PageHero
+        eyebrow="Get In Touch"
+        title="Contact"
+        subtitle="Have a question? Fill out the form and a staff member will be in touch with you."
+      />
 
       <section className="mx-auto grid max-w-7xl gap-16 px-6 py-16 lg:grid-cols-2">
         <ContactForm />
@@ -44,6 +48,15 @@ export default function ContactPage() {
               <br />
               {site.address.city}, {site.address.state} {site.address.zip}
             </address>
+          </div>
+          <div className="border-t border-ink-3 pt-8">
+            <h2 className="font-sans text-[11px] font-bold tracking-[0.25em] text-gold-dim uppercase">
+              Parties &amp; Events
+            </h2>
+            <p className="mt-2 max-w-sm font-sans text-sm text-cream/60">
+              Looking to book a special event at the brewery? Send us a message and a staff
+              member will be in touch soon.
+            </p>
           </div>
         </div>
       </section>

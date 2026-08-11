@@ -6,10 +6,10 @@
 export const site = {
   name: "Crabtree Brewing Company",
   shortName: "Crabtree",
-  tagline: "Greeley's Original Production Brewery",
+  tagline: "Greeley's Finest Beer Experience",
   established: 2006,
   description:
-    "Established in 2006, Crabtree Brewing Company is Greeley's original production brewery — 20+ beers on tap, genuine community, and a taphouse where everyone feels at home.",
+    "Established in 2006, Crabtree Brewing Company is proud to be Greeley's original production brewery. We're dedicated to quality beer, genuine community, and creating a taphouse environment where everyone feels at home. With more than 20 beers on tap, there's something here for every palate.",
   phone: "(970) 356-0516",
   phoneHref: "tel:+19703560516",
   // UNVERIFIED — third-party sourced (SignalHire), not pulled directly from
@@ -135,6 +135,14 @@ export const beers: Beer[] = [
     description: "Blonde ale brewed with blueberry and raspberry.",
   },
   {
+    slug: "cherry-blossom",
+    name: "Cherry Blossom",
+    style: "Cherry & Vanilla Blonde Ale",
+    category: "Blondes, Pilsners & Wheats",
+    abv: "6.4%",
+    description: "Blonde ale brewed with cherry and vanilla.",
+  },
+  {
     slug: "serenity",
     name: "Serenity",
     style: "Seasonal Amber Ale",
@@ -197,7 +205,7 @@ export const beers: Beer[] = [
     style: "Nitro Stout",
     category: "Stouts & Porters",
     abv: "4.5%",
-    description: "Nitro-poured stout, silky and smooth.",
+    description: "Nitro-poured stout, silky and smooth. Please allow a bit of extra time for this pour.",
   },
   {
     slug: "blank-slate",
@@ -205,7 +213,7 @@ export const beers: Beer[] = [
     style: "Hard Seltzer",
     category: "Hard Seltzers",
     abv: "5.0%",
-    description: "Hard seltzer.",
+    description: "Choose your own adventure — pick from over 12 syrup flavors.",
   },
   {
     slug: "hop-water",
@@ -213,7 +221,8 @@ export const beers: Beer[] = [
     style: "Non-Alcoholic",
     category: "Non-Alcoholic",
     abv: "0%",
-    description: "Sparkling water with mosaic hops and butterfly pea flower. No alcohol.",
+    description:
+      "Sparkling water with mosaic hops and butterfly pea flower. Optional: choose your own flavor.",
   },
 ];
 
