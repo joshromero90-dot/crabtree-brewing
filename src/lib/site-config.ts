@@ -236,18 +236,13 @@ export type BrewEvent = {
   recurring?: boolean;
 };
 
-// Pulled from crabtreebrewing.com's events archive — the recurring Trivia
-// Night is real, but the schedule was last confirmed from a 2022 listing.
-// PLEASE CONFIRM this is still accurate before publishing, and add any
-// current live-music or food-truck nights here.
 export const events: BrewEvent[] = [
   {
     slug: "trivia-night",
     title: "Trivia Night",
-    date: "1st & 3rd Tuesday of the month",
-    time: "7:30 PM – 10:00 PM",
-    description:
-      "Grab a brew and join us for trivia night in the taproom. UNVERIFIED — confirm this schedule is still current.",
+    date: "Every Wednesday",
+    time: "7:00 PM",
+    description: "Grab a brew and join us for trivia night in the taproom.",
     recurring: true,
   },
   {

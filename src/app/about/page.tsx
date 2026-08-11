@@ -1,6 +1,21 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { PageHero } from "@/components/ui/PageHero";
 import { site } from "@/lib/site-config";
+
+// Real taproom/taphouse photos pulled from crabtreebrewing.com on 2026-08-10.
+const GALLERY_PHOTOS = [
+  { src: "/gallery/taphouse-01.jpg", alt: "Guests holding Crabtree beer and merch in the taphouse" },
+  { src: "/gallery/taproom-01.jpg", alt: "Crabtree Dearfield Strawberry Blonde Ale cans" },
+  { src: "/gallery/taphouse-02.jpg", alt: "Inside the Crabtree taphouse" },
+  { src: "/gallery/taproom-02.jpg", alt: "Crabtree Brewing taproom" },
+  { src: "/gallery/taphouse-03.jpg", alt: "Crabtree taphouse seating area" },
+  { src: "/gallery/taproom-03.jpg", alt: "Crabtree Brewing taproom" },
+  { src: "/gallery/taphouse-04.jpg", alt: "Crabtree taphouse interior" },
+  { src: "/gallery/taproom-04.jpg", alt: "Crabtree Brewing taproom" },
+  { src: "/gallery/taphouse-05.jpg", alt: "Crabtree taphouse bar" },
+  { src: "/gallery/taphouse-06.jpg", alt: "Crabtree taphouse" },
+];
 
 export const metadata: Metadata = {
   title: "Our Story | Crabtree Brewing Company",
@@ -105,28 +120,23 @@ export default function AboutPage() {
             Photo Gallery
           </h2>
           <p className="mt-2 font-sans text-sm text-cream/40">
-            Placeholder tiles — drop real taproom photos into{" "}
-            <code className="text-cream/50">public/gallery/</code> and swap them in here.
+            From the taphouse — pulled from crabtreebrewing.com.
           </p>
-          <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3">
-            {["Taproom bar", "Brewhouse", "Pouring a flight", "Patio", "Can release", "Trivia night crowd"].map(
-              (label, i) => (
-                <div
-                  key={label}
-                  className="flex aspect-square items-center justify-center border border-ink-3 bg-ink"
-                  style={{
-                    backgroundImage:
-                      i % 2 === 0
-                        ? "radial-gradient(circle at 30% 30%, rgba(243,181,21,0.08), transparent 60%)"
-                        : "radial-gradient(circle at 70% 70%, rgba(28,107,160,0.12), transparent 60%)",
-                  }}
-                >
-                  <span className="font-sans text-[11px] font-semibold tracking-[0.15em] text-cream/25 uppercase">
-                    {label}
-                  </span>
-                </div>
-              ),
-            )}
+          <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
+            {GALLERY_PHOTOS.map((photo) => (
+              <div
+                key={photo.src}
+                className="relative aspect-square overflow-hidden border border-ink-3 bg-ink-2"
+              >
+                <Image
+                  src={photo.src}
+                  alt={photo.alt}
+                  fill
+                  sizes="(min-width: 1024px) 20vw, (min-width: 640px) 33vw, 50vw"
+                  className="object-cover"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>

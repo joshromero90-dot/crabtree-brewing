@@ -6,7 +6,7 @@ import { getTodayStatus, formatHour } from "@/lib/hours";
 
 const TICKER_ITEMS = [
   "20+ BEERS ON TAP",
-  "TRIVIA TUESDAYS · 7PM",
+  "TRIVIA WEDNESDAYS · 7PM",
   "LIVE MUSIC FRIDAYS · 7PM",
   `EST. ${site.established} · GREELEY'S ORIGINAL PRODUCTION BREWERY`,
   "FAMILY & DOG FRIENDLY TAPROOM",
