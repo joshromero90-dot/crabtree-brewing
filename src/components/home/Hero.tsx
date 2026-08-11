@@ -17,7 +17,7 @@ export function Hero() {
         aria-hidden
       />
 
-      <div className="relative mx-auto grid max-w-7xl gap-12 px-6 pt-16 pb-20 sm:pt-24 sm:pb-28 lg:grid-cols-[1.1fr_1fr] lg:items-center lg:gap-16">
+      <div className="relative mx-auto grid max-w-7xl gap-10 px-6 pt-10 pb-12 sm:pt-14 sm:pb-16 lg:grid-cols-[1fr_1.3fr] lg:items-center lg:gap-10">
         <div>
           <div className="flex items-center gap-3">
             <span className="h-[2px] w-8 bg-gold" />
@@ -49,7 +49,7 @@ export function Hero() {
             src="/gallery/hero-beers.jpg"
             alt="Three Crabtree beers — a pale ale, a sour, and a lager — poured in etched Crabtree glassware on a taproom table"
             fill
-            sizes="(min-width: 1024px) 45vw, 100vw"
+            sizes="(min-width: 1024px) 55vw, 100vw"
             className="object-contain"
             priority
           />
