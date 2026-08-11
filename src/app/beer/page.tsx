@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/ui/PageHero";
+import { CategoryNav } from "@/components/beer/CategoryNav";
 import { beers, beerCategoryOrder } from "@/lib/site-config";
+import { slugify } from "@/lib/slugify";
 
 export const metadata: Metadata = {
   title: "Beer Menu | Crabtree Brewing Company",
@@ -22,10 +24,12 @@ export default function BeerPage() {
         subtitle="Pulled from the current tap list — always double check with the taproom for what's actually pouring today."
       />
 
+      <CategoryNav categories={categories.map((c) => c.category)} />
+
       <section className="mx-auto max-w-7xl px-6 py-16">
         <div className="flex flex-col gap-16">
           {categories.map(({ category, items }) => (
-            <div key={category}>
+            <div key={category} id={slugify(category)} className="scroll-mt-[250px]">
               <h2 className="font-display text-2xl tracking-wide text-gold-dim uppercase">
                 {category}
               </h2>
