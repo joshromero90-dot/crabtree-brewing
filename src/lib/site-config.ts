@@ -246,6 +246,14 @@ export const events: BrewEvent[] = [
     recurring: true,
   },
   {
+    slug: "poker-night",
+    title: "Poker Night",
+    date: "Every Thursday",
+    time: "6:30 PM",
+    description: "Pull up a seat for poker night in the taproom.",
+    recurring: true,
+  },
+  {
     slug: "seasonal-release",
     title: "Seasonal Beer Release",
     date: "TBD",
