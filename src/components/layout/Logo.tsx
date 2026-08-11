@@ -10,11 +10,11 @@ const hasRealLogo = fs.existsSync(path.join(process.cwd(), "public", "logo.png")
 
 export function Logo({ className = "" }: { className?: string }) {
   return (
-    <Link href="/" className={`flex items-center gap-3 ${className}`}>
+    <Link href="/" className={`flex items-center ${className}`}>
       {hasRealLogo ? (
         <Image
           src="/logo.png"
-          alt={`${"Crabtree Brewing Company"} logo`}
+          alt="Crabtree Brewing Company"
           width={176}
           height={176}
           className="h-44 w-44 shrink-0"
@@ -23,19 +23,12 @@ export function Logo({ className = "" }: { className?: string }) {
       ) : (
         <span
           className="relative flex h-44 w-44 shrink-0 items-center justify-center rounded-full border-4 border-blue bg-gold text-3xl font-black tracking-tight text-blue"
-          aria-hidden
+          role="img"
+          aria-label="Crabtree Brewing Company"
         >
           CB
         </span>
       )}
-      <span className="flex flex-col leading-none">
-        <span className="font-display text-lg tracking-wide text-cream uppercase">
-          Crabtree
-        </span>
-        <span className="font-sans text-[9px] font-semibold tracking-[0.3em] text-gold uppercase">
-          Brewing Co.
-        </span>
-      </span>
     </Link>
   );
 }
