@@ -26,7 +26,7 @@ export function Hero() {
             </span>
           </div>
 
-          <h1 className="mt-6 font-display text-[13vw] leading-[0.85] text-cream uppercase sm:text-6xl lg:text-6xl xl:text-7xl">
+          <h1 className="mt-6 font-display text-[15vw] leading-[0.85] text-cream uppercase sm:text-7xl lg:text-7xl xl:text-8xl">
             Greeley&rsquo;s
             <br />
             <span className="text-gold-dim">OG Brewery.</span>
@@ -44,13 +44,13 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="relative aspect-[4/3] overflow-hidden border-2 border-ink-3 lg:aspect-[3/4] lg:h-[560px]">
+        <div className="relative aspect-[3/2] overflow-hidden border-2 border-ink-3 bg-ink-2">
           <Image
             src="/gallery/hero-beers.jpg"
             alt="Three Crabtree beers — a pale ale, a sour, and a lager — poured in etched Crabtree glassware on a taproom table"
             fill
             sizes="(min-width: 1024px) 45vw, 100vw"
-            className="object-cover"
+            className="object-contain"
             priority
           />
         </div>
