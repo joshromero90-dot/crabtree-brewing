@@ -92,6 +92,24 @@ export default function AboutPage() {
           <em>The Hobbyless Brewer&rsquo;s Wife</em> — for a much more passionate telling from
           her side of it, that&rsquo;s the place to go.
         </p>
+
+        <div className="mt-10 overflow-hidden border-2 border-ink-3">
+          <video
+            src="/video/crabtree-slideshow.mp4"
+            controls
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            className="block w-full"
+          >
+            Your browser doesn&rsquo;t support embedded video —{" "}
+            <a href="/video/crabtree-slideshow.mp4" className="underline">
+              download it here
+            </a>
+            .
+          </video>
+        </div>
       </section>
 
       <section className="border-t border-ink-3 bg-ink-2">
