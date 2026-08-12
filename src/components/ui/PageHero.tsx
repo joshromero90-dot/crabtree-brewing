@@ -12,9 +12,9 @@ export function PageHero({
 }) {
   return (
     <section className="relative overflow-hidden border-b border-ink-3 bg-ink-2">
-      {/* Same signature brand-mark watermark as the homepage Hero, mirrored
-          into the empty space on the right since PageHero content is
-          left-aligned */}
+      {/* Signature brand-mark watermark, mirrored into the empty space on
+          the right since PageHero content is left-aligned (the homepage
+          Hero keeps its own copy on the left). */}
       <div
         className="pointer-events-none absolute top-1/2 -right-24 h-[320px] w-[320px] -translate-y-1/2 opacity-[0.14] sm:-right-32 sm:h-[420px] sm:w-[420px] lg:-right-40 lg:h-[520px] lg:w-[520px]"
         aria-hidden
