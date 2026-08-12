@@ -5,17 +5,13 @@ import { site } from "@/lib/site-config";
 export function Hero() {
   return (
     <section className="relative overflow-hidden border-b border-ink-3">
-      {/* Abstract brand glow */}
+      {/* Oversized brand mark — bleeds off the corner as a signature graphic device */}
       <div
-        className="pointer-events-none absolute -top-1/3 -right-1/4 h-[600px] w-[600px] rounded-full opacity-40 blur-3xl"
-        style={{ background: "radial-gradient(circle, var(--color-gold), transparent 70%)" }}
+        className="pointer-events-none absolute -top-32 -left-32 h-[480px] w-[480px] opacity-[0.14] sm:-top-40 sm:-left-40 sm:h-[620px] sm:w-[620px] lg:-top-56 lg:-left-56 lg:h-[820px] lg:w-[820px]"
         aria-hidden
-      />
-      <div
-        className="pointer-events-none absolute -bottom-1/3 -left-1/4 h-[500px] w-[500px] rounded-full opacity-30 blur-3xl"
-        style={{ background: "radial-gradient(circle, var(--color-blue), transparent 70%)" }}
-        aria-hidden
-      />
+      >
+        <Image src="/logo.png" alt="" fill className="object-contain" />
+      </div>
 
       <div className="relative mx-auto grid max-w-7xl gap-10 px-6 pt-10 pb-12 sm:pt-14 sm:pb-16 lg:grid-cols-[1fr_1.3fr] lg:items-center lg:gap-10">
         <div>
