@@ -64,7 +64,25 @@ export default function AboutPage() {
       />
 
       <section className="mx-auto max-w-3xl px-6 py-16">
-        <p className="font-sans text-lg leading-relaxed text-cream/70">
+        <div className="overflow-hidden border-2 border-ink-3">
+          <video
+            src="/video/crabtree-slideshow.mp4"
+            controls
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            className="block w-full"
+          >
+            Your browser doesn&rsquo;t support embedded video —{" "}
+            <a href="/video/crabtree-slideshow.mp4" className="underline">
+              download it here
+            </a>
+            .
+          </video>
+        </div>
+
+        <p className="mt-10 font-sans text-lg leading-relaxed text-cream/70">
           In September 2003, Jeff and his wife, Stephanie, trekked to the nearest homebrew shop
           in the Denver area to buy what they needed to start a new hobby of brewing beer at
           home. Jeff was studying business at UNC, and brewing quickly found its way into all of
@@ -92,24 +110,6 @@ export default function AboutPage() {
           <em>The Hobbyless Brewer&rsquo;s Wife</em> — for a much more passionate telling from
           her side of it, that&rsquo;s the place to go.
         </p>
-
-        <div className="mt-10 overflow-hidden border-2 border-ink-3">
-          <video
-            src="/video/crabtree-slideshow.mp4"
-            controls
-            muted
-            loop
-            playsInline
-            preload="metadata"
-            className="block w-full"
-          >
-            Your browser doesn&rsquo;t support embedded video —{" "}
-            <a href="/video/crabtree-slideshow.mp4" className="underline">
-              download it here
-            </a>
-            .
-          </video>
-        </div>
       </section>
 
       <section className="border-t border-ink-3 bg-ink-2">
