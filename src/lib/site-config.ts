@@ -12,6 +12,7 @@ export const site = {
     "Established in 2006, Crabtree Brewing Company is proud to be Greeley's original production brewery. We're dedicated to quality beer, genuine community, and creating a taphouse environment where everyone feels at home. With more than 20 beers on tap, there's something here for every palate.",
   phone: "(970) 356-0516",
   phoneHref: "tel:+19703560516",
+  shopUrl: "https://crabtree-brewing-company.square.site",
   // UNVERIFIED — third-party sourced (SignalHire), not pulled directly from
   // the site. Confirm the real inbox before publishing.
   email: "info@crabtreebrewing.com",

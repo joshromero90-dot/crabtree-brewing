@@ -57,14 +57,18 @@ export function Footer() {
             </h3>
             <ul className="mt-3 flex flex-col gap-2 font-sans text-sm text-cream/60">
               {[
-                ["/beer", "Beer Menu"],
-                ["/events", "Events"],
-                ["/merch", "Merch"],
-                ["/about", "Our Story"],
-                ["/contact", "Contact"],
-              ].map(([href, label]) => (
+                { href: "/beer", label: "Beer Menu" },
+                { href: "/events", label: "Events" },
+                { href: site.shopUrl, label: "Merch", external: true },
+                { href: "/about", label: "Our Story" },
+                { href: "/contact", label: "Contact" },
+              ].map(({ href, label, external }) => (
                 <li key={href}>
-                  <Link href={href} className="hover:text-cream">
+                  <Link
+                    href={href}
+                    {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                    className="hover:text-cream"
+                  >
                     {label}
                   </Link>
                 </li>

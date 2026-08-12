@@ -19,8 +19,14 @@ export default function MerchPage() {
       <PageHero
         eyebrow="Take It Home"
         title="Merch"
-        subtitle="Online shop is on the way. In the meantime, grab gear in person at the taproom."
+        subtitle="Shop online or grab gear in person at the taproom."
       />
+
+      <div className="mx-auto max-w-7xl px-6 pt-10">
+        <Button href={site.shopUrl} external>
+          Shop the Online Store
+        </Button>
+      </div>
 
       <section className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid gap-px overflow-hidden border border-ink-3 sm:grid-cols-3">
@@ -30,7 +36,7 @@ export default function MerchPage() {
               className="flex flex-col items-center justify-center gap-2 bg-ink-2 px-6 py-16 text-center"
             >
               <span className="font-sans text-[10px] font-bold tracking-[0.3em] text-blue uppercase">
-                Coming Soon
+                Available Online
               </span>
               <h2 className="font-display text-3xl tracking-wide text-cream uppercase">
                 {cat.name}

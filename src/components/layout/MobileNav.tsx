@@ -2,13 +2,14 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { site } from "@/lib/site-config";
 
 const NAV = [
   { href: "/beer", label: "Beer" },
   { href: "/taproom", label: "Taproom" },
   { href: "/events", label: "Events" },
   { href: "/about", label: "About" },
-  { href: "/merch", label: "Merch" },
+  { href: site.shopUrl, label: "Merch", external: true },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -40,6 +41,7 @@ export function MobileNav() {
                 key={item.href}
                 href={item.href}
                 onClick={() => setOpen(false)}
+                {...(item.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 className="font-display text-2xl tracking-wide text-cream uppercase hover:text-gold-dim"
               >
                 {item.label}

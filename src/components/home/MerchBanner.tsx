@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/Button";
+import { site } from "@/lib/site-config";
 
 export function MerchBanner() {
   return (
@@ -12,7 +13,7 @@ export function MerchBanner() {
             Take the Taproom Home
           </h2>
         </div>
-        <Button href="/merch" onDark>
+        <Button href={site.shopUrl} onDark external>
           Shop Merch
         </Button>
       </div>

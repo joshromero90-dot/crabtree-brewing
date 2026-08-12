@@ -2,13 +2,14 @@ import Link from "next/link";
 import { Logo } from "./Logo";
 import { StatusTicker } from "./StatusTicker";
 import { MobileNav } from "./MobileNav";
+import { site } from "@/lib/site-config";
 
 const NAV = [
   { href: "/beer", label: "Beer" },
   { href: "/taproom", label: "Taproom" },
   { href: "/events", label: "Events" },
   { href: "/about", label: "About" },
-  { href: "/merch", label: "Merch" },
+  { href: site.shopUrl, label: "Merch", external: true },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -24,6 +25,7 @@ export function Header() {
               <Link
                 key={item.href}
                 href={item.href}
+                {...(item.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 className="font-sans text-xs font-semibold tracking-[0.18em] text-cream/60 uppercase transition-colors hover:text-gold-dim"
               >
                 {item.label}
