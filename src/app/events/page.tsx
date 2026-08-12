@@ -45,7 +45,7 @@ export default function EventsPage() {
         </ul>
 
         <p className="mt-8 font-sans text-xs text-cream/30">
-          Placeholder calendar — swap in real dates in{" "}
+          Add new events or update dates any time in{" "}
           <code className="text-cream/50">src/lib/site-config.ts</code>, or wire this page up
           to a live calendar feed later.
         </p>
