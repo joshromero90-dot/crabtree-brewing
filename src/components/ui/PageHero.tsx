@@ -12,9 +12,11 @@ export function PageHero({
 }) {
   return (
     <section className="relative overflow-hidden border-b border-ink-3 bg-ink-2">
-      {/* Same signature brand-mark watermark as the homepage Hero */}
+      {/* Same signature brand-mark watermark as the homepage Hero, mirrored
+          into the empty space on the right since PageHero content is
+          left-aligned */}
       <div
-        className="pointer-events-none absolute -top-24 -left-24 h-[320px] w-[320px] opacity-[0.14] sm:-top-32 sm:-left-32 sm:h-[420px] sm:w-[420px] lg:-top-40 lg:-left-40 lg:h-[520px] lg:w-[520px]"
+        className="pointer-events-none absolute top-1/2 -right-24 h-[320px] w-[320px] -translate-y-1/2 opacity-[0.14] sm:-right-32 sm:h-[420px] sm:w-[420px] lg:-right-40 lg:h-[520px] lg:w-[520px]"
         aria-hidden
       >
         <Image src="/logo.png" alt="" fill className="object-contain" />
