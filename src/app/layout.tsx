@@ -3,6 +3,7 @@ import { Anton, Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { AgeGate } from "@/components/layout/AgeGate";
 import { site } from "@/lib/site-config";
 
 const anton = Anton({
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${anton.variable} ${inter.variable} h-full scroll-smooth antialiased`}
     >
       <body className="flex min-h-full flex-col bg-ink text-cream">
+        <AgeGate />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
