@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/ui/PageHero";
-import { ContactForm } from "@/components/contact/ContactForm";
 import { site } from "@/lib/site-config";
 
 export const metadata: Metadata = {
@@ -13,18 +12,19 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Get In Touch"
         title="Contact"
-        subtitle="Have a question? Fill out the form and a staff member will be in touch with you."
+        subtitle="Have a question? Give us a call or send us an email — we'll get back to you."
       />
 
-      <section className="mx-auto grid max-w-7xl gap-16 px-6 py-16 lg:grid-cols-2">
-        <ContactForm />
-
+      <section className="mx-auto max-w-2xl px-6 py-16">
         <div className="flex flex-col gap-8">
           <div>
             <h2 className="font-sans text-[11px] font-bold tracking-[0.25em] text-gold-dim uppercase">
               Phone
             </h2>
-            <a href={site.phoneHref} className="mt-2 block font-display text-2xl tracking-wide text-cream hover:text-gold-dim">
+            <a
+              href={site.phoneHref}
+              className="mt-2 block font-display text-2xl tracking-wide text-cream hover:text-gold-dim"
+            >
               {site.phone}
             </a>
           </div>
@@ -54,8 +54,8 @@ export default function ContactPage() {
               Parties &amp; Events
             </h2>
             <p className="mt-2 max-w-sm font-sans text-sm text-cream/60">
-              Looking to book a special event at the brewery? Send us a message and a staff
-              member will be in touch soon.
+              Looking to book a special event at the brewery? Email us and a staff member
+              will be in touch soon.
             </p>
           </div>
         </div>
