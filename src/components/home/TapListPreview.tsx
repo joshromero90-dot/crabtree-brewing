@@ -1,22 +1,15 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Button } from "@/components/ui/Button";
+import { BeerCard } from "@/components/home/BeerCard";
 import { beers } from "@/lib/site-config";
 
 export function TapListPreview() {
   const featured = beers.filter((b) => b.featured);
 
   return (
-    <section className="relative overflow-hidden border-b border-ink-3 bg-ink-2">
-      {/* Beer product photo as a full-bleed background, tinted with a color
-          wash so it stays vivid but the text on top stays legible */}
-      <div className="pointer-events-none absolute inset-0" aria-hidden>
-        <Image src="/gallery/taproom-02.jpg" alt="" fill className="object-cover" />
-        <div className="absolute inset-0 bg-ink-2/70" />
-      </div>
-
-      <div className="relative mx-auto max-w-7xl px-6 py-20">
+    <section className="border-b border-ink-3 bg-ink-2">
+      <div className="mx-auto max-w-7xl px-6 py-20">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div>
             <Eyebrow>What&rsquo;s On Tap</Eyebrow>
@@ -34,23 +27,7 @@ export function TapListPreview() {
 
         <div className="mt-12 grid gap-px overflow-hidden border border-ink-3 sm:grid-cols-2 lg:grid-cols-4">
           {featured.map((beer) => (
-            <div
-              key={beer.slug}
-              className="group flex flex-col justify-between bg-ink p-6 transition-colors hover:bg-gold"
-            >
-              <div>
-                <span className="font-sans text-[10px] font-bold tracking-[0.2em] text-blue uppercase">
-                  {beer.style}
-                </span>
-                <h3 className="mt-2 font-display text-2xl tracking-wide text-cream uppercase">
-                  {beer.name}
-                </h3>
-                <p className="mt-3 font-sans text-sm text-cream/50">{beer.description}</p>
-              </div>
-              <span className="mt-6 font-sans text-xs font-bold tracking-[0.15em] text-gold-dim group-hover:text-cream">
-                {beer.abv} ABV
-              </span>
-            </div>
+            <BeerCard key={beer.slug} beer={beer} />
           ))}
         </div>
 
