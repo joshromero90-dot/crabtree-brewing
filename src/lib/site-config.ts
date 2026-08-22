@@ -264,14 +264,6 @@ export const events: BrewEvent[] = [
     recurring: true,
   },
   {
-    slug: "teacher-faculty-appreciation-night",
-    title: "Teacher & Faculty Appreciation Night",
-    date: "Friday, August 21",
-    time: "6:00 PM – 9:00 PM",
-    description:
-      "Back-to-school trivia, a build-your-own bookmark bar, a cafeteria-special dinner from Rubbin' Butts BBQ, and $5 pints for teachers & faculty with a current school ID.",
-  },
-  {
     slug: "boots-and-brews-line-dancing",
     title: "Boots & Brews Line Dancing",
     date: "Friday, August 28",

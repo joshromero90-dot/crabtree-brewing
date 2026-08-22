@@ -1,11 +1,25 @@
+import Image from "next/image";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Button } from "@/components/ui/Button";
 import { events } from "@/lib/site-config";
 
 export function EventsTeaser() {
   return (
-    <section className="border-b border-ink-3">
-      <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-[1fr_1.4fr] lg:gap-20">
+    <section className="relative overflow-hidden border-b border-ink-3">
+      {/* Beer product photo as a faded background texture */}
+      <div
+        className="pointer-events-none absolute -bottom-20 -left-24 h-[340px] w-[460px] opacity-[0.12] grayscale sm:-bottom-24 sm:-left-32 sm:h-[420px] sm:w-[580px] lg:h-[520px] lg:w-[720px]"
+        aria-hidden
+      >
+        <Image
+          src="/gallery/taproom-03.jpg"
+          alt=""
+          fill
+          className="object-cover"
+        />
+      </div>
+
+      <div className="relative mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-[1fr_1.4fr] lg:gap-20">
         <div>
           <Eyebrow>Happening at the Taproom</Eyebrow>
           <h2 className="mt-4 font-display text-4xl tracking-wide text-cream uppercase sm:text-5xl">

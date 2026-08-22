@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Button } from "@/components/ui/Button";
@@ -7,8 +8,21 @@ export function TapListPreview() {
   const featured = beers.filter((b) => b.featured);
 
   return (
-    <section className="border-b border-ink-3 bg-ink-2">
-      <div className="mx-auto max-w-7xl px-6 py-20">
+    <section className="relative overflow-hidden border-b border-ink-3 bg-ink-2">
+      {/* Beer product photo as a faded background texture */}
+      <div
+        className="pointer-events-none absolute -top-20 -right-24 h-[340px] w-[460px] opacity-[0.12] grayscale sm:-top-24 sm:-right-32 sm:h-[420px] sm:w-[580px] lg:h-[520px] lg:w-[720px]"
+        aria-hidden
+      >
+        <Image
+          src="/gallery/taproom-02.jpg"
+          alt=""
+          fill
+          className="object-cover"
+        />
+      </div>
+
+      <div className="relative mx-auto max-w-7xl px-6 py-20">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div>
             <Eyebrow>What&rsquo;s On Tap</Eyebrow>
