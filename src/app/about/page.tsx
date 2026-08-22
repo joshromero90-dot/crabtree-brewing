@@ -131,11 +131,6 @@ export default function AboutPage() {
               </li>
             ))}
           </ol>
-          <p className="mt-8 font-sans text-xs text-cream/30">
-            Pulled straight from Crabtree&rsquo;s own &ldquo;Our Story&rdquo; page. Got an
-            update or a correction? Swap it in at{" "}
-            <code className="text-cream/50">src/app/about/page.tsx</code>.
-          </p>
         </div>
       </section>
 

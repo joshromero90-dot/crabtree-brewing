@@ -57,12 +57,6 @@ export default function BeerPage() {
             </div>
           ))}
         </div>
-
-        <p className="mt-12 font-sans text-xs text-cream/30">
-          Sourced from crabtreebrewing.com&rsquo;s beer menu — taps rotate, so treat this as a
-          starting point. Edit the list any time in{" "}
-          <code className="text-cream/50">src/lib/site-config.ts</code>.
-        </p>
       </section>
 
       <BackToTop />
