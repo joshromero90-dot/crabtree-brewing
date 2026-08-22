@@ -249,18 +249,20 @@ export type BrewEvent = {
 export const events: BrewEvent[] = [
   {
     slug: "trivia-night",
-    title: "Trivia Night",
+    title: "Pints & Ponder Trivia",
     date: "Every Wednesday",
-    time: "7:00 PM",
-    description: "Grab a brew and join us for trivia night in the taproom.",
+    time: "6:30 PM",
+    description:
+      "Trivia every Wednesday at 6:30 PM. Win prizes and points each week — the season finale winner takes home sports, concert, and event tickets.",
     recurring: true,
   },
   {
     slug: "poker-night",
-    title: "Poker Night",
+    title: "Poker",
     date: "Every Thursday",
-    time: "6:30 PM",
-    description: "Pull up a seat for poker night in the taproom.",
+    time: "6:00 PM",
+    description:
+      "Free to play with any beer or food purchase. Win prizes at the weekly and quarterly tournaments.",
     recurring: true,
   },
   {
@@ -268,6 +270,7 @@ export const events: BrewEvent[] = [
     title: "Boots & Brews Line Dancing",
     date: "Friday, August 28",
     time: "7:00 PM",
-    description: "Line dancing in the taproom. $20 early bird tickets.",
+    description:
+      "Show up early for a free drink. Early bird tickets are $20 (through Aug. 20th); $25 at the door starting Aug. 21st. Tickets available on our website.",
   },
 ];
