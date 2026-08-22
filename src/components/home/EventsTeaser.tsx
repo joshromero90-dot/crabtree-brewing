@@ -6,17 +6,11 @@ import { events } from "@/lib/site-config";
 export function EventsTeaser() {
   return (
     <section className="relative overflow-hidden border-b border-ink-3">
-      {/* Beer product photo as a faded background texture */}
-      <div
-        className="pointer-events-none absolute -bottom-20 -left-24 h-[340px] w-[460px] opacity-[0.12] grayscale sm:-bottom-24 sm:-left-32 sm:h-[420px] sm:w-[580px] lg:h-[520px] lg:w-[720px]"
-        aria-hidden
-      >
-        <Image
-          src="/gallery/taproom-03.jpg"
-          alt=""
-          fill
-          className="object-cover"
-        />
+      {/* Beer product photo as a full-bleed background, tinted with a color
+          wash so it stays vivid but the text on top stays legible */}
+      <div className="pointer-events-none absolute inset-0" aria-hidden>
+        <Image src="/gallery/taproom-03.jpg" alt="" fill className="object-cover" />
+        <div className="absolute inset-0 bg-ink/70" />
       </div>
 
       <div className="relative mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-[1fr_1.4fr] lg:gap-20">
