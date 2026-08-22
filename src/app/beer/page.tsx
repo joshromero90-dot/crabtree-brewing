@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/ui/PageHero";
 import { CategoryNav } from "@/components/beer/CategoryNav";
+import { BackToTop } from "@/components/ui/BackToTop";
 import { beers, beerCategoryOrder } from "@/lib/site-config";
 import { slugify } from "@/lib/slugify";
 
@@ -63,6 +64,8 @@ export default function BeerPage() {
           <code className="text-cream/50">src/lib/site-config.ts</code>.
         </p>
       </section>
+
+      <BackToTop />
     </>
   );
 }
