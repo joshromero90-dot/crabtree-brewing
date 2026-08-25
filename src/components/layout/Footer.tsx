@@ -59,7 +59,7 @@ export function Footer() {
               {[
                 { href: "/beer", label: "Beer Menu" },
                 { href: "/events", label: "Events" },
-                { href: site.shopUrl, label: "Merch", external: true },
+                { href: site.shopUrl, label: "Shop", external: true },
                 { href: "/about", label: "Our Story" },
                 { href: "/contact", label: "Contact" },
               ].map(({ href, label, external }) => (

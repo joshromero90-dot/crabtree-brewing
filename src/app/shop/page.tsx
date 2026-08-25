@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/Button";
 import { site } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Merch | Crabtree Brewing Company",
+  title: "Shop | Crabtree Brewing Company",
 };
 
 const CATEGORIES = [
@@ -13,12 +13,12 @@ const CATEGORIES = [
   { name: "Drinkware", desc: "Pint glasses, growlers, koozies" },
 ];
 
-export default function MerchPage() {
+export default function ShopPage() {
   return (
     <>
       <PageHero
         eyebrow="Take It Home"
-        title="Merch"
+        title="Shop"
         subtitle="Shop online or grab gear in person at the taproom."
       />
 

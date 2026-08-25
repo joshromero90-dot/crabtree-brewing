@@ -9,7 +9,7 @@ const NAV = [
   { href: "/taproom", label: "Taproom" },
   { href: "/events", label: "Events" },
   { href: "/about", label: "About" },
-  { href: site.shopUrl, label: "Merch", external: true },
+  { href: site.shopUrl, label: "Shop", external: true },
   { href: "/contact", label: "Contact" },
 ];
 

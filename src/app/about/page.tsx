@@ -106,11 +106,6 @@ export default function AboutPage() {
           alongside running the brewery, until 2009, when he was finally able to quit the
           cubicle. He&rsquo;s been fully living the brewer&rsquo;s dream ever since.
         </p>
-        <p className="mt-6 font-sans text-sm text-cream/40">
-          This story is adapted from Stephanie Crabtree&rsquo;s blog,{" "}
-          <em>The Hobbyless Brewer&rsquo;s Wife</em> — for a much more passionate telling from
-          her side of it, that&rsquo;s the place to go.
-        </p>
       </section>
 
       <section className="border-t border-ink-3 bg-ink-2">
@@ -139,9 +134,6 @@ export default function AboutPage() {
           <h2 className="font-display text-3xl tracking-wide text-cream uppercase">
             Photo Gallery
           </h2>
-          <p className="mt-2 font-sans text-sm text-cream/40">
-            From the taphouse — pulled from crabtreebrewing.com.
-          </p>
           <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
             {GALLERY_PHOTOS.map((photo) => (
               <div

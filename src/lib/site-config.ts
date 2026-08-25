@@ -271,6 +271,6 @@ export const events: BrewEvent[] = [
     date: "Friday, August 28",
     time: "7:00 PM",
     description:
-      "Show up early for a free drink. Early bird tickets are $20 (through Aug. 20th); $25 at the door starting Aug. 21st. Tickets available on our website.",
+      "Show up early for a free drink. Early bird tickets are $20 (through Aug. 20th); $25 at the door starting Aug. 21st. Tickets can be purchased on the Shop page.",
   },
 ];
