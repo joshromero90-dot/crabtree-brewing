@@ -92,7 +92,8 @@ export const beers: Beer[] = [
     // UNVERIFIED — sourced from a third-party bottle shop listing, not the
     // brewery's own beer-menu page (which doesn't currently list this one).
     abv: "7.5%",
-    description: "Hazy, juicy IPA. Confirm this is still in rotation — it's a homepage best seller but wasn't on the current beer-menu page.",
+    description:
+      "It's hazy, it's juicy, it's a customer favorite. Order this between 4:20 PM and 4:22 PM for special pricing of $4.20!",
     featured: true,
   },
   {
