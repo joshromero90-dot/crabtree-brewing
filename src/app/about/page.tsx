@@ -68,11 +68,10 @@ export default function AboutPage() {
           <video
             src="/video/crabtree-slideshow.mp4"
             controls
-            autoPlay
             muted
             loop
             playsInline
-            preload="auto"
+            preload="none"
             className="block w-full"
           >
             Your browser doesn&rsquo;t support embedded video —{" "}

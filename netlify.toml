@@ -6,3 +6,22 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+# Long-cache the static media in /public directly (photos, video, logo) so
+# returning visitors re-download nothing until the file itself changes.
+# Next's own /_next/static build output is already cached long-term by the
+# Next runtime automatically, so it isn't repeated here.
+[[headers]]
+  for = "/gallery/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/video/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/logo.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
