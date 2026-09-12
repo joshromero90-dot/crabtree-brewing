@@ -50,6 +50,7 @@ export type Beer = {
   abv: string;
   description: string;
   featured?: boolean;
+  soldOut?: boolean;
 };
 
 // Pulled from the live tap list at crabtreebrewing.com/beer-menu, grouped
@@ -160,6 +161,7 @@ export const beers: Beer[] = [
     abv: "6.7%",
     description:
       "Annual fall release — real pumpkin added directly into the mash tun with a mix of spices.",
+    soldOut: true,
   },
   {
     slug: "crab-me-a-marzen",
@@ -168,6 +170,7 @@ export const beers: Beer[] = [
     category: "Ambers & Reds",
     abv: "5.7%",
     description: "Malty Oktoberfest-style Märzen.",
+    soldOut: true,
   },
   {
     slug: "rocky-mountain-red",

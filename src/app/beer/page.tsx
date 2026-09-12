@@ -36,7 +36,18 @@ export default function BeerPage() {
               </h2>
               <div className="mt-6 grid gap-px overflow-hidden border border-ink-3 sm:grid-cols-2">
                 {items.map((beer) => (
-                  <div key={beer.slug} className="flex flex-col justify-between bg-ink-2 p-7">
+                  <div
+                    key={beer.slug}
+                    className="relative flex flex-col justify-between overflow-hidden bg-ink-2 p-7"
+                  >
+                    {beer.soldOut && (
+                      <div
+                        className="pointer-events-none absolute -right-11 top-5 w-40 rotate-45 bg-gold py-1 text-center font-sans text-[10px] font-bold tracking-[0.15em] text-ink uppercase shadow-[0_2px_6px_rgba(0,0,0,0.25)]"
+                        aria-label="Back soon"
+                      >
+                        Back Soon
+                      </div>
+                    )}
                     <div>
                       <div className="flex items-start justify-between gap-4">
                         <h3 className="font-display text-2xl tracking-wide text-cream uppercase">
