@@ -42,7 +42,7 @@ export default function BeerPage() {
                   >
                     {beer.soldOut && (
                       <div
-                        className="pointer-events-none absolute -right-11 top-5 w-40 rotate-45 bg-gold py-1 text-center font-sans text-[10px] font-bold tracking-[0.15em] text-ink uppercase shadow-[0_2px_6px_rgba(0,0,0,0.25)]"
+                        className="pointer-events-none absolute -right-11 top-5 w-40 rotate-45 bg-blue py-1 text-center font-sans text-[10px] font-bold tracking-[0.15em] text-ink uppercase shadow-[0_2px_6px_rgba(0,0,0,0.25)]"
                         aria-label="Back soon"
                       >
                         Back Soon

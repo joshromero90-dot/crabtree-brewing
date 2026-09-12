@@ -253,7 +253,7 @@ export type BrewEvent = {
 export const events: BrewEvent[] = [
   {
     slug: "trivia-night",
-    title: "Pints & Ponder Trivia",
+    title: "Trivia",
     date: "Every Wednesday",
     time: "6:30 PM",
     description:
