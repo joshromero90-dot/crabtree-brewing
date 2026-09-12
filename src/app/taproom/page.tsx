@@ -5,7 +5,9 @@ import { site } from "@/lib/site-config";
 import { formatHour } from "@/lib/hours";
 
 export const metadata: Metadata = {
-  title: "Taproom | Crabtree Brewing Company",
+  title: "Taproom",
+  description:
+    "Visit Crabtree Brewing Company's taproom at 2961 29th St, Greeley, CO. Hours, directions, and everything you need to plan your visit.",
 };
 
 export default function TaproomPage() {

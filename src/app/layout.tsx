@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { AgeGate } from "@/components/layout/AgeGate";
+import { StructuredData } from "@/components/layout/StructuredData";
 import { site } from "@/lib/site-config";
 
 const anton = Anton({
@@ -17,9 +18,53 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+// TODO: swap for the real production domain once crabtreebrewing.com's DNS
+// is pointed at this Netlify site (see project memory) — this affects the
+// canonical URLs and Open Graph image URLs Next generates for every page.
+const SITE_URL = "https://crabtree-brewing.netlify.app";
+
 export const metadata: Metadata = {
-  title: `${site.name} | ${site.tagline}`,
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: `${site.name} | ${site.tagline}`,
+    template: `%s | ${site.name}`,
+  },
   description: site.description,
+  keywords: [
+    "Crabtree Brewing",
+    "Greeley brewery",
+    "Greeley taproom",
+    "Colorado craft beer",
+    "Greeley Colorado beer",
+    "brewery near me",
+  ],
+  authors: [{ name: site.name }],
+  openGraph: {
+    type: "website",
+    url: SITE_URL,
+    siteName: site.name,
+    title: `${site.name} | ${site.tagline}`,
+    description: site.description,
+    images: [
+      {
+        url: "/gallery/hero-beers.jpg",
+        width: 1600,
+        height: 1067,
+        alt: "Crabtree Brewing Company beers on tap",
+      },
+    ],
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${site.name} | ${site.tagline}`,
+    description: site.description,
+    images: ["/gallery/hero-beers.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -29,6 +74,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${anton.variable} ${inter.variable} h-full scroll-smooth antialiased`}
     >
       <body className="flex min-h-full flex-col bg-ink text-cream">
+        <StructuredData />
         <AgeGate />
         <Header />
         <main className="flex-1">{children}</main>

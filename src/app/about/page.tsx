@@ -18,7 +18,9 @@ const GALLERY_PHOTOS = [
 ];
 
 export const metadata: Metadata = {
-  title: "Our Story | Crabtree Brewing Company",
+  title: "Our Story",
+  description:
+    "Founded in 2006, Crabtree Brewing Company is Greeley, Colorado's original production brewery. Read the story behind the taproom.",
 };
 
 const TIMELINE = [

@@ -6,7 +6,9 @@ import { beers, beerCategoryOrder } from "@/lib/site-config";
 import { slugify } from "@/lib/slugify";
 
 export const metadata: Metadata = {
-  title: "Beer Menu | Crabtree Brewing Company",
+  title: "Beer Menu",
+  description:
+    "20+ beers on tap at Crabtree Brewing Company in Greeley, CO — blondes, sours, pale ales, stouts, seltzers, and more. See what's pouring now.",
 };
 
 export default function BeerPage() {

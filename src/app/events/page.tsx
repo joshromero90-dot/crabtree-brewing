@@ -3,7 +3,9 @@ import { PageHero } from "@/components/ui/PageHero";
 import { events } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Events | Crabtree Brewing Company",
+  title: "Events",
+  description:
+    "Weekly trivia and poker nights, live music, and seasonal releases at Crabtree Brewing Company's taproom in Greeley, CO. See what's happening this week.",
 };
 
 export default function EventsPage() {

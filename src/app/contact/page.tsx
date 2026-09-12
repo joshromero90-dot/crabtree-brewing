@@ -3,7 +3,9 @@ import { PageHero } from "@/components/ui/PageHero";
 import { site } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Contact | Crabtree Brewing Company",
+  title: "Contact",
+  description:
+    "Get in touch with Crabtree Brewing Company in Greeley, CO — phone, email, address, and info on booking parties or events at the taproom.",
 };
 
 export default function ContactPage() {

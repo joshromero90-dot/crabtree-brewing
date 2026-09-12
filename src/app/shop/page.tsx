@@ -4,7 +4,9 @@ import { Button } from "@/components/ui/Button";
 import { site } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Shop | Crabtree Brewing Company",
+  title: "Shop",
+  description:
+    "Crabtree Brewing Company apparel, headwear, and drinkware. Shop online or pick up gear in person at the Greeley taproom.",
 };
 
 const CATEGORIES = [
