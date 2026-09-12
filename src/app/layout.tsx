@@ -18,10 +18,7 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-// TODO: swap for the real production domain once crabtreebrewing.com's DNS
-// is pointed at this Netlify site (see project memory) — this affects the
-// canonical URLs and Open Graph image URLs Next generates for every page.
-const SITE_URL = "https://crabtree-brewing.netlify.app";
+const SITE_URL = "https://crabtreebrewing.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

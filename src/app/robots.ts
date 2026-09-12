@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 // Keep in sync with the SITE_URL in src/app/layout.tsx and sitemap.ts.
-const SITE_URL = "https://crabtree-brewing.netlify.app";
+const SITE_URL = "https://crabtreebrewing.com";
 
 export default function robots(): MetadataRoute.Robots {
   return {

@@ -1,5 +1,8 @@
 import { site } from "@/lib/site-config";
 
+// Keep in sync with the SITE_URL in src/app/layout.tsx, sitemap.ts, and robots.ts.
+const SITE_URL = "https://crabtreebrewing.com";
+
 const DAY_URIS = [
   "Sunday",
   "Monday",
@@ -29,12 +32,12 @@ export function StructuredData() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Brewery",
-    "@id": "https://crabtree-brewing.netlify.app/#business",
+    "@id": `${SITE_URL}/#business`,
     name: site.name,
     description: site.description,
-    image: "https://crabtree-brewing.netlify.app/gallery/hero-beers.jpg",
-    logo: "https://crabtree-brewing.netlify.app/logo.png",
-    url: "https://crabtree-brewing.netlify.app",
+    image: `${SITE_URL}/gallery/hero-beers.jpg`,
+    logo: `${SITE_URL}/logo.png`,
+    url: SITE_URL,
     telephone: site.phone,
     email: site.email,
     address: {

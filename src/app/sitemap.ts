@@ -1,8 +1,7 @@
 import type { MetadataRoute } from "next";
 
-// Keep in sync with the SITE_URL in src/app/layout.tsx — update both once
-// crabtreebrewing.com's DNS points here.
-const SITE_URL = "https://crabtree-brewing.netlify.app";
+// Keep in sync with the SITE_URL in src/app/layout.tsx.
+const SITE_URL = "https://crabtreebrewing.com";
 
 const ROUTES = [
   { path: "", priority: 1, changeFrequency: "weekly" as const },
