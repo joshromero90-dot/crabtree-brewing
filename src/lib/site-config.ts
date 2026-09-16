@@ -255,9 +255,9 @@ export const events: BrewEvent[] = [
     slug: "trivia-night",
     title: "Trivia",
     date: "Every Wednesday",
-    time: "6:30 PM",
+    time: "7:00 PM",
     description:
-      "Trivia every Wednesday at 6:30 PM. Win prizes and points each week — the season finale winner takes home sports, concert, and event tickets.",
+      "Trivia every Wednesday at 7:00 PM. Win prizes and points each week — the season finale winner takes home sports, concert, and event tickets.",
     recurring: true,
   },
   {
@@ -268,13 +268,5 @@ export const events: BrewEvent[] = [
     description:
       "Free to play with any beer or food purchase. Win prizes at the weekly and quarterly tournaments.",
     recurring: true,
-  },
-  {
-    slug: "boots-and-brews-line-dancing",
-    title: "Boots & Brews Line Dancing",
-    date: "Friday, August 28",
-    time: "7:00 PM",
-    description:
-      "Show up early for a free drink. Early bird tickets are $20 (through Aug. 20th); $25 at the door starting Aug. 21st. Tickets can be purchased on the Shop page.",
   },
 ];
