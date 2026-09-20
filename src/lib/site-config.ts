@@ -51,6 +51,7 @@ export type Beer = {
   description: string;
   featured?: boolean;
   soldOut?: boolean;
+  nowPouring?: boolean;
 };
 
 // Pulled from the live tap list at crabtreebrewing.com/beer-menu, grouped
@@ -161,7 +162,7 @@ export const beers: Beer[] = [
     abv: "6.7%",
     description:
       "Annual fall release — real pumpkin added directly into the mash tun with a mix of spices.",
-    soldOut: true,
+    nowPouring: true,
   },
   {
     slug: "crab-me-a-marzen",

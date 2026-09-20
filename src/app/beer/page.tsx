@@ -50,6 +50,14 @@ export default function BeerPage() {
                         Back Soon
                       </div>
                     )}
+                    {beer.nowPouring && (
+                      <div
+                        className="pointer-events-none absolute -right-11 top-5 w-40 rotate-45 bg-gold py-1 text-center font-sans text-[10px] font-bold tracking-[0.15em] text-cream uppercase shadow-[0_2px_6px_rgba(0,0,0,0.25)]"
+                        aria-label="Now pouring"
+                      >
+                        Now Pouring!
+                      </div>
+                    )}
                     <div>
                       <div className="flex items-start justify-between gap-4">
                         <h3 className="font-display text-2xl tracking-wide text-cream uppercase">
