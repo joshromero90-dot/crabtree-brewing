@@ -30,10 +30,14 @@ export const metadata: Metadata = {
   keywords: [
     "Crabtree Brewing",
     "Greeley brewery",
+    "breweries in Greeley",
     "Greeley taproom",
     "Colorado craft beer",
     "Greeley Colorado beer",
     "brewery near me",
+    "pumpkin beer",
+    "events in Greeley",
+    "things to do in Greeley",
   ],
   authors: [{ name: site.name }],
   openGraph: {

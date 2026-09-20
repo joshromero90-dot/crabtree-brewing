@@ -6,21 +6,35 @@ import { site } from "@/lib/site-config";
 // Real taproom/taphouse photos pulled from crabtreebrewing.com on 2026-08-10.
 const GALLERY_PHOTOS = [
   { src: "/gallery/taphouse-01.jpg", alt: "Guests holding Crabtree beer and merch in the taphouse" },
-  { src: "/gallery/taproom-01.jpg", alt: "Crabtree Dearfield Strawberry Blonde Ale cans" },
-  { src: "/gallery/taphouse-02.jpg", alt: "Inside the Crabtree taphouse" },
-  { src: "/gallery/taproom-02.jpg", alt: "Crabtree Brewing taproom" },
-  { src: "/gallery/taphouse-03.jpg", alt: "Crabtree taphouse seating area" },
-  { src: "/gallery/taproom-03.jpg", alt: "Crabtree Brewing taproom" },
-  { src: "/gallery/taphouse-04.jpg", alt: "Crabtree taphouse interior" },
-  { src: "/gallery/taproom-04.jpg", alt: "Crabtree Brewing taproom" },
-  { src: "/gallery/taphouse-05.jpg", alt: "Crabtree taphouse bar" },
-  { src: "/gallery/taphouse-06.jpg", alt: "Crabtree taphouse" },
+  { src: "/gallery/taproom-01.jpg", alt: "Crabtree Brewing Dearfield Strawberry Blonde Ale cans" },
+  { src: "/gallery/taphouse-02.jpg", alt: "The main bar and taproom seating at Crabtree Brewing in Greeley, CO" },
+  { src: "/gallery/taproom-02.jpg", alt: "Crabtree Brewing Sourdelic Strawberry Rhubarb Sour Ale cans" },
+  { src: "/gallery/taphouse-03.jpg", alt: "Guests chatting over pints at the Crabtree Brewing taproom bar" },
+  { src: "/gallery/taproom-03.jpg", alt: "Crabtree Brewing Chela Vida Mexican Lager cans" },
+  { src: "/gallery/taphouse-04.jpg", alt: "Taproom seating beneath Crabtree Brewing's neon crab sign" },
+  { src: "/gallery/taproom-04.jpg", alt: "Crabtree Brewing Chronic Haze Hazy IPA cans" },
+  { src: "/gallery/taphouse-05.jpg", alt: "A bartender serving guests at the busy Crabtree Brewing bar" },
+  { src: "/gallery/taphouse-06.jpg", alt: "A Crabtree Brewing bartender pouring a beer from the tap" },
 ];
 
+const DESCRIPTION =
+  "Founded in 2006, Crabtree Brewing Company is Greeley, Colorado's original production brewery. Read the story behind Greeley's favorite taproom.";
+
 export const metadata: Metadata = {
-  title: "Our Story",
-  description:
-    "Founded in 2006, Crabtree Brewing Company is Greeley, Colorado's original production brewery. Read the story behind the taproom.",
+  title: "Our Story — Greeley Brewery Since 2006",
+  description: DESCRIPTION,
+  alternates: { canonical: "/about" },
+  openGraph: {
+    title: "Our Story | Crabtree Brewing Company",
+    description: DESCRIPTION,
+    url: "/about",
+    images: [{ url: "/gallery/taphouse-01.jpg", width: 900, height: 600, alt: "Guests holding Crabtree beer and merch in the taphouse" }],
+  },
+  twitter: {
+    title: "Our Story | Crabtree Brewing Company",
+    description: DESCRIPTION,
+    images: ["/gallery/taphouse-01.jpg"],
+  },
 };
 
 const TIMELINE = [

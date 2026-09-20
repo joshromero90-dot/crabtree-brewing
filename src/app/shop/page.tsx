@@ -3,10 +3,24 @@ import { PageHero } from "@/components/ui/PageHero";
 import { Button } from "@/components/ui/Button";
 import { site } from "@/lib/site-config";
 
+const DESCRIPTION =
+  "Shop Crabtree Brewing Company apparel, headwear, and drinkware online, or pick up gear in person at the taproom in Greeley, CO.";
+
 export const metadata: Metadata = {
-  title: "Shop",
-  description:
-    "Crabtree Brewing Company apparel, headwear, and drinkware. Shop online or pick up gear in person at the Greeley taproom.",
+  title: "Shop Merch",
+  description: DESCRIPTION,
+  alternates: { canonical: "/shop" },
+  openGraph: {
+    title: "Shop | Crabtree Brewing Company",
+    description: DESCRIPTION,
+    url: "/shop",
+    images: [{ url: "/gallery/taphouse-01.jpg", width: 900, height: 600, alt: "Guests holding Crabtree beer and merch in the taphouse" }],
+  },
+  twitter: {
+    title: "Shop | Crabtree Brewing Company",
+    description: DESCRIPTION,
+    images: ["/gallery/taphouse-01.jpg"],
+  },
 };
 
 const CATEGORIES = [

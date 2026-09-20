@@ -83,6 +83,13 @@ export function Footer() {
                 Instagram
               </a>
               <a
+                href={site.social.facebook}
+                target="_blank"
+                className="font-sans text-[11px] font-semibold tracking-[0.15em] text-cream/50 uppercase hover:text-gold-dim"
+              >
+                Facebook
+              </a>
+              <a
                 href={site.social.untappd}
                 target="_blank"
                 className="font-sans text-[11px] font-semibold tracking-[0.15em] text-cream/50 uppercase hover:text-gold-dim"

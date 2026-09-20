@@ -5,10 +5,24 @@ import { BackToTop } from "@/components/ui/BackToTop";
 import { beers, beerCategoryOrder } from "@/lib/site-config";
 import { slugify } from "@/lib/slugify";
 
+const DESCRIPTION =
+  "20+ beers on tap at Crabtree Brewing in Greeley, CO — blondes, IPAs, sours, stouts, hard seltzers, and our seasonal pumpkin beer. See what's pouring now.";
+
 export const metadata: Metadata = {
-  title: "Beer Menu",
-  description:
-    "20+ beers on tap at Crabtree Brewing Company in Greeley, CO — blondes, sours, pale ales, stouts, seltzers, and more. See what's pouring now.",
+  title: "Beer Menu: Pumpkin Beer & More",
+  description: DESCRIPTION,
+  alternates: { canonical: "/beer" },
+  openGraph: {
+    title: "Beer Menu | Crabtree Brewing Company",
+    description: DESCRIPTION,
+    url: "/beer",
+    images: [{ url: "/gallery/hero-beers.jpg", width: 1600, height: 1067, alt: "Crabtree Brewing Company beers on tap" }],
+  },
+  twitter: {
+    title: "Beer Menu | Crabtree Brewing Company",
+    description: DESCRIPTION,
+    images: ["/gallery/hero-beers.jpg"],
+  },
 };
 
 export default function BeerPage() {

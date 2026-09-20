@@ -2,10 +2,24 @@ import type { Metadata } from "next";
 import { PageHero } from "@/components/ui/PageHero";
 import { site } from "@/lib/site-config";
 
+const DESCRIPTION =
+  "Contact Crabtree Brewing Company in Greeley, CO — phone, email, address, and info on booking parties or private events at the taproom.";
+
 export const metadata: Metadata = {
-  title: "Contact",
-  description:
-    "Get in touch with Crabtree Brewing Company in Greeley, CO — phone, email, address, and info on booking parties or events at the taproom.",
+  title: "Contact Us in Greeley, CO",
+  description: DESCRIPTION,
+  alternates: { canonical: "/contact" },
+  openGraph: {
+    title: "Contact Us | Crabtree Brewing Company",
+    description: DESCRIPTION,
+    url: "/contact",
+    images: [{ url: "/gallery/taphouse-02.jpg", width: 900, height: 600, alt: "The main bar and taproom seating at Crabtree Brewing in Greeley, CO" }],
+  },
+  twitter: {
+    title: "Contact Us | Crabtree Brewing Company",
+    description: DESCRIPTION,
+    images: ["/gallery/taphouse-02.jpg"],
+  },
 };
 
 export default function ContactPage() {

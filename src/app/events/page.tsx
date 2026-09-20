@@ -1,16 +1,32 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/ui/PageHero";
+import { EventStructuredData } from "@/components/events/EventStructuredData";
 import { events } from "@/lib/site-config";
 
+const DESCRIPTION =
+  "Weekly trivia and poker nights plus seasonal releases at Crabtree Brewing's taproom in Greeley, CO. Looking for events in Greeley this week? Start here.";
+
 export const metadata: Metadata = {
-  title: "Events",
-  description:
-    "Weekly trivia and poker nights, live music, and seasonal releases at Crabtree Brewing Company's taproom in Greeley, CO. See what's happening this week.",
+  title: "Events in Greeley, CO",
+  description: DESCRIPTION,
+  alternates: { canonical: "/events" },
+  openGraph: {
+    title: "Events in Greeley, CO | Crabtree Brewing Company",
+    description: DESCRIPTION,
+    url: "/events",
+    images: [{ url: "/gallery/taphouse-05.jpg", width: 900, height: 598, alt: "A bartender serving guests at the busy Crabtree Brewing bar" }],
+  },
+  twitter: {
+    title: "Events in Greeley, CO | Crabtree Brewing Company",
+    description: DESCRIPTION,
+    images: ["/gallery/taphouse-05.jpg"],
+  },
 };
 
 export default function EventsPage() {
   return (
     <>
+      <EventStructuredData events={events} />
       <PageHero
         eyebrow="Taproom Calendar"
         title="Events"

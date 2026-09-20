@@ -4,10 +4,61 @@ import { Button } from "@/components/ui/Button";
 import { site } from "@/lib/site-config";
 import { formatHour } from "@/lib/hours";
 
+const DESCRIPTION =
+  "Visit Crabtree Brewing's taproom at 2961 29th St in Greeley, CO. Hours, directions, and everything you need to plan your visit to Greeley's original brewery.";
+
 export const metadata: Metadata = {
-  title: "Taproom",
-  description:
-    "Visit Crabtree Brewing Company's taproom at 2961 29th St, Greeley, CO. Hours, directions, and everything you need to plan your visit.",
+  title: "Taproom & Hours in Greeley, CO",
+  description: DESCRIPTION,
+  alternates: { canonical: "/taproom" },
+  openGraph: {
+    title: "Taproom & Hours | Crabtree Brewing Company",
+    description: DESCRIPTION,
+    url: "/taproom",
+    images: [{ url: "/gallery/taphouse-02.jpg", width: 900, height: 600, alt: "The main bar and taproom seating at Crabtree Brewing in Greeley, CO" }],
+  },
+  twitter: {
+    title: "Taproom & Hours | Crabtree Brewing Company",
+    description: DESCRIPTION,
+    images: ["/gallery/taphouse-02.jpg"],
+  },
+};
+
+const FAQS = [
+  {
+    question: "What are Crabtree Brewing's taproom hours?",
+    answer:
+      "We're open every day except Monday — Tuesday, Wednesday, Thursday, and Sunday from 2 PM, and Friday and Saturday from noon. See the full schedule above for closing times.",
+  },
+  {
+    question: "Where is Crabtree Brewing located?",
+    answer:
+      "Our taproom is at 2961 29th St, Greeley, CO 80631 — Greeley's original production brewery, pouring since 2006.",
+  },
+  {
+    question: "Is Crabtree Brewing dog and family friendly?",
+    answer: "Yes — the taproom is both dog and family friendly, so bring the whole crew.",
+  },
+  {
+    question: "Does Crabtree Brewing have events?",
+    answer:
+      "Yes — trivia night is every Wednesday at 7 PM and poker night is every Thursday at 6 PM, plus seasonal one-off releases. See the full events calendar for what's coming up.",
+  },
+  {
+    question: "How many beers does Crabtree Brewing have on tap?",
+    answer:
+      "20+ beers across blondes, pilsners, IPAs, sours, ambers, and stouts, plus seasonal releases like our fall pumpkin beer. See the full beer menu for what's pouring now.",
+  },
+];
+
+const FAQ_JSON_LD = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: FAQS.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: { "@type": "Answer", text: faq.answer },
+  })),
 };
 
 export default function TaproomPage() {
@@ -74,6 +125,28 @@ export default function TaproomPage() {
           />
         </div>
       </section>
+
+      <section className="border-t border-ink-3 bg-ink-2">
+        <div className="mx-auto max-w-3xl px-6 py-16">
+          <h2 className="font-display text-3xl tracking-wide text-cream uppercase">
+            Frequently Asked Questions
+          </h2>
+          <div className="mt-8 flex flex-col divide-y divide-ink-3 border-t border-b border-ink-3">
+            {FAQS.map((faq) => (
+              <div key={faq.question} className="py-6">
+                <h3 className="font-sans text-base font-bold text-cream">{faq.question}</h3>
+                <p className="mt-2 font-sans text-sm text-cream/60">{faq.answer}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_JSON_LD) }}
+      />
     </>
   );
 }
