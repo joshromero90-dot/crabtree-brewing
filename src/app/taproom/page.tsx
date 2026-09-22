@@ -37,7 +37,8 @@ const FAQS = [
   },
   {
     question: "Is Crabtree Brewing dog and family friendly?",
-    answer: "Yes — the taproom is both dog and family friendly, so bring the whole crew.",
+    answer:
+      "You bet — the whole family is welcome throughout the taproom. Good dogs are welcome too, out on the patio: leash on, best behavior on, tail wags encouraged.",
   },
   {
     question: "Does Crabtree Brewing have events?",
@@ -71,7 +72,7 @@ export default function TaproomPage() {
       <PageHero
         eyebrow="Greeley's Destination Brewery"
         title="The Taproom"
-        subtitle="Come for the brew, stay for the vibes. Family and dog friendly, always pouring something new."
+        subtitle="Come for the brew, stay for the vibes. Family friendly inside, and leashed good boys and girls welcome on the patio."
       />
 
       <section className="mx-auto grid max-w-7xl gap-12 px-6 py-16 lg:grid-cols-2 lg:gap-20">

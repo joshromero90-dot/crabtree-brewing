@@ -7,7 +7,7 @@ import { AboutTeaser } from "@/components/home/AboutTeaser";
 import { MerchBanner } from "@/components/home/MerchBanner";
 
 const DESCRIPTION =
-  "Greeley, Colorado's original production brewery since 2006 — 20+ beers on tap, weekly trivia & poker nights, and a dog-friendly taproom at 2961 29th St.";
+  "Greeley, Colorado's original production brewery since 2006 — 20+ beers on tap, weekly trivia & poker nights, and a leashed-dog-friendly patio at 2961 29th St.";
 
 export const metadata: Metadata = {
   title: "Brewery in Greeley, CO | Crabtree Brewing Company",
