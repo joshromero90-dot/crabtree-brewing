@@ -6,7 +6,6 @@ import { site } from "@/lib/site-config";
 
 const NAV = [
   { href: "/beer", label: "Beer" },
-  { href: "/taproom", label: "Taproom" },
   { href: "/events", label: "Events" },
   { href: "/about", label: "About" },
   { href: site.shopUrl, label: "Shop", external: true },
@@ -36,7 +35,7 @@ export function Header() {
             href="/taproom"
             className="hidden shrink-0 border-2 border-gold bg-gold px-4 py-2 font-sans text-xs font-bold tracking-[0.15em] text-cream uppercase transition-colors hover:bg-transparent hover:text-gold-dim lg:block"
           >
-            Visit Taproom
+            Visit Us
           </Link>
           <MobileNav />
         </div>
