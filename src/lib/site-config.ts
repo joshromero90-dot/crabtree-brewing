@@ -162,7 +162,6 @@ export const beers: Beer[] = [
     abv: "6.7%",
     description:
       "Annual fall release — real pumpkin added directly into the mash tun with a mix of spices.",
-    nowPouring: true,
   },
   {
     slug: "crab-me-a-marzen",
