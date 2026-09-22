@@ -72,7 +72,7 @@ export default function TaproomPage() {
       <PageHero
         eyebrow="Greeley's Destination Brewery"
         title="The Taproom"
-        subtitle="Come for the brew, stay for the vibes. Family friendly inside, and leashed good boys and girls welcome on the patio."
+        subtitle="Good beer. Good company."
       />
 
       <section className="mx-auto grid max-w-7xl gap-12 px-6 py-16 lg:grid-cols-2 lg:gap-20">
