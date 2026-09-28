@@ -1,11 +1,33 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import { site } from "@/lib/site-config";
-import { formatHour } from "@/lib/hours";
+import { getTodayStatus, formatHour } from "@/lib/hours";
 
 export function QuickInfo() {
-  const todayHours = site.hours[new Date().getDay()];
+  // This section is statically prerendered at build time, so today's hours
+  // can't be baked in server-side — that would freeze on whatever day the
+  // site was last deployed. Compute it client-side on mount instead.
+  const [todayHours, setTodayHours] = useState<{ open: number | null; close: number | null } | null>(
+    null,
+  );
+
+  useEffect(() => {
+    setTodayHours(getTodayStatus().today);
+    const id = setInterval(() => setTodayHours(getTodayStatus().today), 60_000);
+    return () => clearInterval(id);
+  }, []);
 
   const stats = [
-    { label: "Today's Hours", value: todayHours.open === null ? "Closed" : `${formatHour(todayHours.open)}–${formatHour(todayHours.close)}` },
+    {
+      label: "Today's Hours",
+      value:
+        todayHours === null
+          ? " "
+          : todayHours.open === null
+            ? "Closed"
+            : `${formatHour(todayHours.open)}–${formatHour(todayHours.close)}`,
+    },
     { label: "Taps Pouring", value: "20+" },
     { label: "Founded", value: `${site.established}` },
     { label: "Location", value: `${site.address.city}, ${site.address.state}` },
