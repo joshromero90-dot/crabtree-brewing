@@ -54,6 +54,21 @@ body {
   font-family: var(--font-sans);
 }
 
+/* Reuse one small grain tile across all routes and brand surfaces.
+   The tile has a baked-in white wash; multiply retains each surface's color. */
+body,
+.bg-ink,
+.bg-ink\/95,
+.bg-ink-2,
+.bg-gold,
+.bg-blue,
+.bg-blue-deep {
+  background-image: url("/textures/craft-paper-subtle-v2.webp");
+  background-size: 700px 700px;
+  background-repeat: repeat;
+  background-blend-mode: multiply;
+}
+
 ::selection {
   background: var(--color-gold);
   color: var(--color-cream);
