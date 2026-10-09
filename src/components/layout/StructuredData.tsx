@@ -3,16 +3,6 @@ import { site } from "@/lib/site-config";
 // Keep in sync with the SITE_URL in src/app/layout.tsx, sitemap.ts, and robots.ts.
 const SITE_URL = "https://crabtreebrewing.com";
 
-const DAY_URIS = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-
 function toTimeString(hour: number): string {
   const h = Math.floor(hour);
   const m = Math.round((hour - h) * 60);
@@ -22,9 +12,9 @@ function toTimeString(hour: number): string {
 export function StructuredData() {
   const openingHours = site.hours
     .filter((h) => h.open !== null && h.close !== null)
-    .map((h, i) => ({
+    .map((h) => ({
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: `https://schema.org/${DAY_URIS[site.hours.indexOf(h)]}`,
+      dayOfWeek: `https://schema.org/${h.day}`,
       opens: toTimeString(h.open as number),
       closes: toTimeString(h.close as number),
     }));
@@ -38,7 +28,8 @@ export function StructuredData() {
     image: `${SITE_URL}/gallery/hero-beers.jpg`,
     logo: `${SITE_URL}/logo.png`,
     url: SITE_URL,
-    telephone: site.phone,
+    telephone: site.phoneHref.replace("tel:", ""),
+    hasMenu: `${SITE_URL}/beer`,
     email: site.email,
     address: {
       "@type": "PostalAddress",
@@ -58,7 +49,7 @@ export function StructuredData() {
     <script
       type="application/ld+json"
       // eslint-disable-next-line react/no-danger
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
     />
   );
 }

@@ -43,9 +43,9 @@ export function AgeGate() {
           className="h-28 w-28"
           priority
         />
-        <h1 className="mt-6 font-display text-3xl tracking-wide text-cream uppercase">
+        <h2 className="mt-6 font-display text-3xl tracking-wide text-cream uppercase">
           Are You 21 or Older?
-        </h1>
+        </h2>
         <p className="mt-3 font-sans text-sm text-cream/60">
           You must be of legal drinking age to enter this site.
         </p>

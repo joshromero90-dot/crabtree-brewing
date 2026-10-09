@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/ui/PageHero";
-import { EventStructuredData } from "@/components/events/EventStructuredData";
 import { events } from "@/lib/site-config";
 
 const DESCRIPTION =
@@ -26,10 +25,11 @@ export const metadata: Metadata = {
 export default function EventsPage() {
   return (
     <>
-      <EventStructuredData events={events} />
+      {/* Dated Event markup belongs on individual event pages. Weekly
+          listings here do not have reliable occurrence dates or unique URLs. */}
       <PageHero
         eyebrow="Taproom Calendar"
-        title="Events"
+        title="Trivia & Events"
         subtitle="Weekly regulars and one-off specials. Check back — this list grows as we lock in the calendar."
       />
 

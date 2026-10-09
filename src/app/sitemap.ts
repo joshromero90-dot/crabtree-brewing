@@ -14,10 +14,9 @@ const ROUTES = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
+  // Omit lastModified until actual content modification dates are tracked.
   return ROUTES.map((route) => ({
     url: `${SITE_URL}${route.path}`,
-    lastModified: now,
     changeFrequency: route.changeFrequency,
     priority: route.priority,
   }));
