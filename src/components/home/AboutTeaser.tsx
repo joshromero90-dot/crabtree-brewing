@@ -1,6 +1,7 @@
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Button } from "@/components/ui/Button";
 import { site } from "@/lib/site-config";
+import Image from "next/image";
 
 export function AboutTeaser() {
   return (
@@ -13,7 +14,7 @@ export function AboutTeaser() {
         }}
         aria-hidden
       />
-      <div className="relative mx-auto max-w-7xl px-6 py-20">
+      <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-[1.2fr_1fr] lg:gap-16">
         <div className="max-w-2xl">
           <Eyebrow>Since {site.established}</Eyebrow>
           <h2 className="mt-4 font-display text-4xl tracking-wide text-cream uppercase sm:text-5xl">
@@ -32,6 +33,21 @@ export function AboutTeaser() {
             </Button>
           </div>
         </div>
+        <figure className="w-full max-w-lg justify-self-center lg:justify-self-end">
+          <div className="overflow-hidden border-2 border-ink-3 shadow-lg">
+            <Image
+              src="/gallery/oktobrewfest-2026-booth.webp"
+              alt="Three people raising beers at Crabtree Brewing's autumn-decorated booth at OktoBrewfest 2026"
+              width={1400}
+              height={1050}
+              sizes="(min-width: 1024px) 40vw, (min-width: 640px) 512px, calc(100vw - 48px)"
+              className="h-auto w-full"
+            />
+          </div>
+          <figcaption className="mt-3 font-sans text-xs tracking-wide text-cream/60">
+            OktoBrewfest 2026
+          </figcaption>
+        </figure>
       </div>
     </section>
   );

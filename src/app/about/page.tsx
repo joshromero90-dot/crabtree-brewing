@@ -5,6 +5,8 @@ import { site } from "@/lib/site-config";
 
 // Real taproom/taphouse photos pulled from crabtreebrewing.com on 2026-08-10.
 const GALLERY_PHOTOS = [
+  { src: "/gallery/oktobrewfest-2026-booth.webp", alt: "Three people raising beers at Crabtree Brewing's autumn-decorated booth at OktoBrewfest 2026" },
+  { src: "/gallery/oktobrewfest-2026-line.webp", alt: "Festival guests lining up at the Crabtree Brewing tent at OktoBrewfest 2026" },
   { src: "/gallery/taphouse-01.jpg", alt: "Guests holding Crabtree beer and merch in the taphouse" },
   { src: "/gallery/taproom-01.jpg", alt: "Crabtree Brewing Dearfield Strawberry Blonde Ale cans" },
   { src: "/gallery/taphouse-02.jpg", alt: "The main bar and taproom seating at Crabtree Brewing in Greeley, CO" },
