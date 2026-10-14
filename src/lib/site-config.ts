@@ -258,7 +258,7 @@ export const events: BrewEvent[] = [
     date: "Every Wednesday",
     time: "7:00 PM",
     description:
-      "Trivia every Wednesday at 7:00 PM. Win prizes and points each week — the season finale winner takes home sports, concert, and event tickets.",
+      "Trivia every Wednesday at 7:00 PM. It's free to play, and you can win prizes from the brewery!",
     recurring: true,
   },
   {
