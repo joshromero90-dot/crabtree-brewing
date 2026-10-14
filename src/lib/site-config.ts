@@ -248,8 +248,11 @@ export type BrewEvent = {
   date: string;
   time: string;
   description: string;
-  recurring?: boolean;
-};
+} & (
+  | { recurring: true; startsOn?: never }
+  // One-off events need a Greeley calendar date for the homepage week filter.
+  | { recurring?: false; startsOn: `${number}-${number}-${number}` }
+);
 
 export const events: BrewEvent[] = [
   {
