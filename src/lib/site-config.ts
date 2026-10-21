@@ -198,6 +198,15 @@ export const beers: Beer[] = [
     description: "Full-bodied oatmeal stout.",
   },
   {
+    slug: "oatmeal-raisin-cookie-stout",
+    name: "Oatmeal Raisin Cookie Stout",
+    style: "Stout",
+    category: "Stouts & Porters",
+    abv: "5.5%",
+    description: "Oatmeal raisin cookie stout.",
+    nowPouring: true,
+  },
+  {
     slug: "headless-horseman",
     name: "Headless Horseman",
     style: "Pumpkin Ale / Stout Blend",
@@ -231,6 +240,23 @@ export const beers: Beer[] = [
       "Sparkling water with mosaic hops and butterfly pea flower. Optional: choose your own flavor.",
   },
 ];
+
+// Transcribed from the taproom's Zero Proof Sips menu.
+export const mocktailMenu = {
+  title: "Zero Proof Sips",
+  price: "$6",
+  drinks: [
+    { name: "Mile High Purple Haze", description: "Blackberry & lime with our purple hop water." },
+    { name: "Blue Crab Spritz", description: "Blue raspberry, pineapple & soda water." },
+    { name: "Rocky Mountain Melon", description: "Watermelon, lime & ginger beer." },
+    { name: "High Plains Sunset", description: "Dragonfruit, lemon & citrus soda." },
+    { name: "970 Limeade", description: "Cherry, lime & citrus soda." },
+    { name: "Dearfield Strawberry Lemonade", description: "Strawberry & lemonade." },
+    { name: "Lavender Lemonade", description: "Blackberry, lavender & lemonade." },
+    { name: "Berry on the Plains", description: "Strawberry, raspberry & blackberry with ginger beer." },
+    { name: "Colorado Peach Fizz", description: "Coconut, peach, orange & citrus soda." },
+  ],
+} as const;
 
 export const beerCategoryOrder = [
   "Blondes, Pilsners & Wheats",

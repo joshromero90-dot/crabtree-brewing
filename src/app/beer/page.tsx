@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { PageHero } from "@/components/ui/PageHero";
 import { CategoryNav } from "@/components/beer/CategoryNav";
 import { BackToTop } from "@/components/ui/BackToTop";
-import { beers, beerCategoryOrder } from "@/lib/site-config";
+import { beers, beerCategoryOrder, mocktailMenu } from "@/lib/site-config";
 import { slugify } from "@/lib/slugify";
 
 const DESCRIPTION =
@@ -56,22 +56,6 @@ export default function BeerPage() {
                     key={beer.slug}
                     className="relative flex flex-col justify-between overflow-hidden bg-ink-2 p-7"
                   >
-                    {beer.soldOut && (
-                      <div
-                        className="pointer-events-none absolute -right-11 top-5 w-40 rotate-45 bg-blue py-1 text-center font-sans text-[10px] font-bold tracking-[0.15em] text-ink uppercase shadow-[0_2px_6px_rgba(0,0,0,0.25)]"
-                        aria-label="Back soon"
-                      >
-                        Back Soon
-                      </div>
-                    )}
-                    {beer.nowPouring && (
-                      <div
-                        className="pointer-events-none absolute -right-11 top-5 w-40 rotate-45 bg-gold py-1 text-center font-sans text-[10px] font-bold tracking-[0.15em] text-cream uppercase shadow-[0_2px_6px_rgba(0,0,0,0.25)]"
-                        aria-label="Now pouring"
-                      >
-                        Now Pouring!
-                      </div>
-                    )}
                     <div>
                       <div className="flex items-start justify-between gap-4">
                         <h3 className="font-display text-2xl tracking-wide text-cream uppercase">
@@ -84,10 +68,37 @@ export default function BeerPage() {
                       <span className="mt-1 block font-sans text-[11px] font-bold tracking-[0.15em] text-blue uppercase">
                         {beer.style}
                       </span>
-                      <p className="mt-4 font-sans text-sm text-cream/50">{beer.description}</p>
+                      <p className={`mt-4 font-sans text-sm text-cream/50 ${beer.soldOut || beer.nowPouring ? "pr-28" : ""}`}>{beer.description}</p>
                     </div>
+                    {beer.soldOut ? (
+                      <span className="beer-status-badge absolute right-4 bottom-3 bg-blue font-sans text-[9px] font-bold tracking-[0.1em] text-ink uppercase">
+                        Back Soon
+                      </span>
+                    ) : beer.nowPouring ? (
+                      <span className="beer-status-badge absolute right-4 bottom-3 bg-gold font-sans text-[9px] font-bold tracking-[0.1em] text-cream uppercase">
+                        Now Pouring!
+                      </span>
+                    ) : null}
                   </div>
                 ))}
+                {category === "Non-Alcoholic" && (
+                  mocktailMenu.drinks.map((drink) => (
+                    <div key={drink.name} className="bg-ink-2 p-7">
+                      <div className="flex items-start justify-between gap-4">
+                        <h3 className="font-display text-2xl tracking-wide text-cream uppercase">
+                          {drink.name}
+                        </h3>
+                        <span className="shrink-0 font-sans text-xs font-bold text-gold-dim">
+                          0%
+                        </span>
+                      </div>
+                      <span className="mt-1 block font-sans text-[11px] font-bold tracking-[0.15em] text-blue uppercase">
+                        {mocktailMenu.title} · Mocktail
+                      </span>
+                      <p className="mt-4 font-sans text-sm text-cream/50">{drink.description}</p>
+                    </div>
+                  ))
+                )}
               </div>
             </div>
           ))}
