@@ -183,7 +183,7 @@ export const beers: Beer[] = [
   },
   {
     slug: "cali-steam",
-    name: "Cali Steam",
+    name: "Strike It Rich",
     style: "Steam Beer",
     category: "Ambers & Reds",
     abv: "5.0%",
