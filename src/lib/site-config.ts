@@ -32,7 +32,7 @@ export const site = {
   // 0 = Sunday ... 6 = Saturday, 24h time. Pulled from the current
   // crabtreebrewing.com homepage copy.
   hours: [
-    { day: "Sunday", open: 14, close: 19 },
+    { day: "Sunday", open: 12, close: 20 },
     { day: "Monday", open: null, close: null },
     { day: "Tuesday", open: 14, close: 21 },
     { day: "Wednesday", open: 14, close: 21 },

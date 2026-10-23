@@ -28,7 +28,7 @@ const FAQS = [
   {
     question: "What are Crabtree Brewing's taproom hours?",
     answer:
-      "We're open every day except Monday — Tuesday, Wednesday, Thursday, and Sunday from 2 PM, and Friday and Saturday from noon. See the full schedule above for closing times.",
+      "We're open every day except Monday — Tuesday, Wednesday, and Thursday from 2 PM, and Friday, Saturday, and Sunday from noon. Sunday hours are noon–8 PM. See the full schedule above for other closing times.",
   },
   {
     question: "Where is Crabtree Brewing located?",
