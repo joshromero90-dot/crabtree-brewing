@@ -37,8 +37,8 @@ export const site = {
     { day: "Tuesday", open: 14, close: 21 },
     { day: "Wednesday", open: 14, close: 21 },
     { day: "Thursday", open: 14, close: 21 },
-    { day: "Friday", open: 12, close: 21 },
-    { day: "Saturday", open: 12, close: 21 },
+    { day: "Friday", open: 12, close: 22 },
+    { day: "Saturday", open: 12, close: 22 },
   ],
 } as const;
 
