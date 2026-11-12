@@ -89,6 +89,7 @@ export const beers: Beer[] = [
   {
     slug: "chronic-haze",
     name: "Chronic Haze",
+    soldOut: true,
     style: "Hazy IPA",
     category: "Pale Ales",
     // UNVERIFIED — sourced from a third-party bottle shop listing, not the
@@ -163,15 +164,6 @@ export const beers: Beer[] = [
     abv: "6.7%",
     description:
       "Annual fall release — real pumpkin added directly into the mash tun with a mix of spices.",
-  },
-  {
-    slug: "crab-me-a-marzen",
-    name: "Crab Me A Märzen",
-    style: "Oktoberfest Märzen",
-    category: "Ambers & Reds",
-    abv: "5.7%",
-    description: "Malty Oktoberfest-style Märzen.",
-    soldOut: true,
   },
   {
     slug: "rocky-mountain-red",
