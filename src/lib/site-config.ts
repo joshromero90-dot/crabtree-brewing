@@ -134,7 +134,6 @@ export const beers: Beer[] = [
   {
     slug: "sunshine-rainbows",
     name: "Sunshine & Rainbows",
-    soldOut: true,
     style: "Blueberry & Raspberry Blonde Ale",
     category: "Blondes, Pilsners & Wheats",
     abv: "4.8%",
